@@ -12,3 +12,4 @@ for ( i = 'a'; i <= 'z'; i++)
 putchar(i+"\n");
 }
 return (0);
+}
