@@ -12,7 +12,7 @@ while (num < 10)
 {
 int m = num % 10;
 printf("%d", m);
-num--;
+num++;
 }
 return (0);
 }
