@@ -13,7 +13,7 @@ int main(void)
     {
       putchar(x);
       putchar(y);
-      if (!(x == '9' && ones == '9')) /*skip comma at end*/
+      if (!(x == '9' && y == '9')) /*skip comma at end*/
       {
         putchar(',');
         putchar(' ');
