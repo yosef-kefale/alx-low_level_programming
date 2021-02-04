@@ -1,18 +1,14 @@
 #include <stdio.h>
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
+* main - single digits
+* Return: last digit
 */
 int main(void)
 {
-int num;
-num = 0;
-while (num < 10)
-{
-int m = num % 10;
-printf("%d", m);
-num++;
+int i;
+for (i = 0; i <= 9; i++){
+printf("%d", i);
 }
+printf("\n");
 return (0);
 }
