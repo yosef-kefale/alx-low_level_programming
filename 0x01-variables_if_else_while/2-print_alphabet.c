@@ -5,10 +5,10 @@
 */
 int main(void)
 {
-for(int x = 'A'; x <= 'Z'; x++)
+char x;
+for (x = 'a'; x <= 'z'; x++)
 {
-int lower_x = tolower(x);
-putchar(lower_x);
+putchar(x);
 }
-return 0;
+return (0);
 }
