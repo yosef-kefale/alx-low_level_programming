@@ -9,7 +9,6 @@ int main()
 char i;
 {
 for ( i = 'a'; i <= 'z'; i++)
-putchar(i);
-putchar('\n');
+putchar(i+"\n");
 }
 return (0);
