@@ -5,10 +5,17 @@
 */
 int main(void)
 {
-char x;
-for (x = 'a'; x <= 'z'; x++)
+int num = '0';
+char letter = 'a';
+while (num <= '9')/*print 0-9*/
 {
-putchar(x);
+putchar(num);
+num++;
+}
+while (letter <= 'f')/*print a to f*/
+{
+putchar(letter);
+letter++;
 }
 putchar('\n');
 return (0);
