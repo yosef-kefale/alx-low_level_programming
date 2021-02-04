@@ -5,22 +5,21 @@
  */
 int main(void)
 {
-  int x;
-  int y;
-  for (x = '0'; x <= '9'; x++) /*print tens place*/
-  {
-    for (y = '0'; y <= '9'; y++) /*print ones place*/
-    {
-      putchar(x);
-      putchar(y);
-      if (!(x == '9' && y == '9')) /*skip comma at end*/
-      {
-        putchar(',');
-        putchar(' ');
-      }
-    }
-  }
-  putchar('\n');
-
-  return (0);
+int x;
+int y;
+for (x = '0'; x <= '9'; x++)
+{
+for (y = '0'; y <= '9'; y++)
+{
+putchar(x);
+putchar(y);
+if (!(x == '9' && y == '9'))
+{
+putchar(',');
+putchar(' ');
+}
+}
+}
+putchar('\n');
+return (0);
 }
