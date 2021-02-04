@@ -10,8 +10,10 @@ for (i = 0; i < 100 ; i++)
 {
 putchar((i / 10) + '0');
 putchar((i % 10) + '0');
+{
 putchar(',');
 putchar(' ');
+}
 }
 return (0);
 }
