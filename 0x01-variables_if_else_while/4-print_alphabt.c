@@ -1,21 +1,16 @@
+#include <stdlib.h>
 #include <stdio.h>
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
+* main - lowercase and uppercase letters
+* Return: success-0
 */
 int main(void)
 {
-char x;
-for (x = 'a'; x <= 'z'; x++)
+char ch;
+for (ch = 'a' ; ch <= 'z' ; ch++)
 {
-if (x != 'q' || x != 'e')
-{
-putchar(x);
-}
-else
-{
-break;
+if (ch != 'e' && ch != 'q'){
+putchar(ch);
 }
 }
 putchar('\n');
