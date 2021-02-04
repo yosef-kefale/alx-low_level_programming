@@ -6,6 +6,12 @@
 */
 int main(void)
 {
-
-return (0);
+int num = 10;
+while(num > 0)
+{
+int mod = num % 10;
+printf(mod);
+num--; 
+}
+return 0;
 }
