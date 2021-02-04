@@ -7,8 +7,8 @@
 int main(void)
 {
 int num;
-num = 10;
-while (num > 0)
+num = 0;
+while (num < 10)
 {
 int m = num % 10;
 printf("%d", m);
