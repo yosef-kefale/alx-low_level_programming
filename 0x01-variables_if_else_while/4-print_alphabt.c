@@ -12,6 +12,10 @@ if (x != 'q' || x != 'e')
 {
 putchar(x);
 }
+else
+{
+break;
+}
 }
 putchar('\n');
 return (0);
