@@ -1,21 +1,26 @@
 #include <stdio.h>
 /**
-* main - random numbers
-* Return: last digit
-*/
+ *main - Entry point, print 00 to 99 using putchar
+ *Return: Always 0 (Success)
+ */
 int main(void)
 {
-int i;
-for (i = 0; i < 100 ; i++)
-{
-putchar((i / 10) + '0');
-putchar((i % 10) + '0');
-if (i < 99 )
-{
-putchar(',');
-putchar(' ');
-}
-}
-putchar('\n');
-return (0);
+  int x;
+  int y;
+  for (x = '0'; x <= '9'; x++) /*print tens place*/
+  {
+    for (y = '0'; y <= '9'; y++) /*print ones place*/
+    {
+      putchar(x);
+      putchar(y);
+      if (!(x == '9' && ones == '9')) /*skip comma at end*/
+      {
+        putchar(',');
+        putchar(' ');
+      }
+    }
+  }
+  putchar('\n');
+
+  return (0);
 }
