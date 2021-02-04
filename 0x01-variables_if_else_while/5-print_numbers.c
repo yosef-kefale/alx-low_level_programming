@@ -11,7 +11,7 @@ num = 10;
 while (num > 0)
 {
 int m = num % 10;
-printf( %d, m);
+printf("%d", m);
 num--;
 }
 return (0);
