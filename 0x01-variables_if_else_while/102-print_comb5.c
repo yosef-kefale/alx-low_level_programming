@@ -25,7 +25,7 @@ putchar(y);
 putchar(' ');
 putchar(z);
 putchar(a);
-if (!(x == '8' && y =='9')
+if (!(x == '8' && y == '9'))
 {
 putchar(',');
 putchar(' ');
