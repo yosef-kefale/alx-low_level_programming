@@ -18,8 +18,6 @@ for (z = '0'; z <= '9'; z++)
 {
 for (a = '0'; a <= '9'; a++)
 {
-if (!(x == '9' && y == '8' && z == '9' && a == '9'))
-{
 putchar(x);
 putchar(y);
 putchar(' ');
@@ -30,6 +28,9 @@ putchar(' ');
 }
 }
 }
+if (x == '9' && y == '8' && z == '9' && a == '9')
+{
+break;
 }
 }
 putchar('\n');
