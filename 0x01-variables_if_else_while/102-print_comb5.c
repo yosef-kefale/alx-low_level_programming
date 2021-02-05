@@ -1,31 +1,30 @@
 #include <stdio.h>
-
 /**
-*main - Entry point, print 00 to 99 using putchar
-*Return: Always 0 (Success)
+* main - prints all possible different combinations of two digits.
+* Return: Always 0 (Success)
 */
 int main(void)
 {
-int x;
-int y;
-int z;
-int a;
-for (x = '0'; x <= '9'; x++)
+int ones = '0';
+int tens = '0';
+int tens2 = '0';
+int ones2 = '0';
+for (tens = '0'; tens <= '9'; tens++)/* prints tens digit*/
 {
-for (y = '0'; y <= '9'; y++)
+for (ones = '0'; ones <= '9'; ones++)/* prints ones digit*/
 {
-for (z = '0'; z <= '9'; z++)
+for (tens2 = '0'; tens2 <= '9'; tens2++)/* prints tens digit*/
 {
-for (a = '0'; a <= '9'; a++)
+for (ones2 = '0'; ones2 <= '9'; ones2++)/* prints ones digit*/
 {
-if ((x < z) && (y <= a))
+if ((ones < ones2) && (tens <= tens2))
 {
-putchar(x);
-putchar(y);
+putchar(tens);
+putchar(ones);
 putchar(' ');
-putchar(z);
-putchar(a);
-if (!(x == '8' && y == '9'))
+putchar(tens2);
+putchar(ones2);
+if (!(ones == '8' && tens == '9'))/*addes comma and space*/
 {
 putchar(',');
 putchar(' ');
