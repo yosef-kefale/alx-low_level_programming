@@ -14,7 +14,7 @@ for (y = '0'; y <= '9'; y++)
 {
 for (z = '0'; z <= '9'; z++)
 {
-if (x < y || y < z)
+if (x < y && y < z)
 {
 putchar(x);
 putchar(y);
@@ -23,6 +23,7 @@ if (!(x == '7' && y == '8' && z == '9'))
 {
 putchar(',');
 putchar(' ');
+}
 }
 }
 }
