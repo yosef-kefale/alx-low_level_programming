@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
 *main - Entry point, print 00 to 99 using putchar
 *Return: Always 0 (Success)
@@ -7,26 +8,25 @@ int main(void)
 {
 int x;
 int y;
+int z;
+int a;
 for (x = '0'; x <= '9'; x++)
 {
 for (y = '0'; y <= '9'; y++)
 {
-for (a = '0'; a <= '9'; a++)
+for (z = '0'; z <= '9'; z++)
 {
 for (a = '0'; a <= '9'; a++)
 {
-if (x < y)
+if (!(x == '9' && y == '8' && z == '9' && a == '9'))
 {
 putchar(x);
 putchar(y);
 putchar(' ');
+putchar(z);
 putchar(a);
-putchar(b);
-if (!(x == '8' && y == '9'))
-{
 putchar(',');
 putchar(' ');
-}
 }
 }
 }
