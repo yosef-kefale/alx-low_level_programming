@@ -18,19 +18,21 @@ for (z = '0'; z <= '9'; z++)
 {
 for (a = '0'; a <= '9'; a++)
 {
+if ((x < z) && (y <= a))
+{
 putchar(x);
 putchar(y);
 putchar(' ');
 putchar(z);
 putchar(a);
+if (!(x == '8' && y =='9')
+{
 putchar(',');
 putchar(' ');
 }
 }
 }
-if (x == '9' && y == '8' && z == '9' && a == '9')
-{
-break;
+}
 }
 }
 putchar('\n');
