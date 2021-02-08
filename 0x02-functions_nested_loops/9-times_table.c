@@ -13,8 +13,8 @@ for (i = 0; i <= 9; i++)
 {
 for (j = 0; j <= 9; j++)
 {
-int table = i * j;
-_putchar('table');
+int y = i * j;
+_putchar('y');
 }
 _putchar('\n');
 }
