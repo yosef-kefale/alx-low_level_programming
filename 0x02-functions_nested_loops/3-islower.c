@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
-* my_function - does my stuff
+* int _islower - does my stuff
 * @c: user input
 *
-*return(0): lower
+* return(0): lower
 */
 int _islower(int c)
 {
