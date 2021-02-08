@@ -5,7 +5,7 @@
 *
 * Return: multiplication.
 */
-int add(int,int)
+int add(int, int)
 {
 int sum;
 int a;
