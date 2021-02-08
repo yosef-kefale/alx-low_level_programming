@@ -1,11 +1,11 @@
 #include "holberton.h"
 /**
 * add - calculates time table
-* adds two inputs
+* @int - adds two inputs
 *
 * Return: multiplication.
 */
-int add(int , int)
+int add(int,int)
 {
 int sum;
 int a;
