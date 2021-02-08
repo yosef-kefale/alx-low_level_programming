@@ -1,4 +1,4 @@
-#include "Holberton.h"
+#include "holberton.h"
 /**
 * _isalpha - does my stuff
 * @c: user input
