@@ -1,13 +1,15 @@
 #include "holberton.h"
 /**
 * add - calculates time table
-*  @a - mine damnit
+* adds two inputs
 *
 * Return: multiplication.
 */
-int add(int a, int b)
+int add(int , int)
 {
 int sum;
+int a;
+int b;
 sum = a + b;
 return (sum);
 }
