@@ -1,0 +1,7 @@
+3-islower.c:11: WARNING: Multiple instructions on a single line is forbidden                                                                             
+
+3-islower.c:11: WARNING: Statements terminations use 1 semicolon                                                                                         
+
+3-islower.c:13: ERROR: space required before the open parenthesis '('                                                                                    
+
+3-islower.c:20: ERROR: int _islower() should probably be int _islower(void)
