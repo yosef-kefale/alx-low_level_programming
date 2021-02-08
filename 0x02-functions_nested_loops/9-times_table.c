@@ -7,9 +7,11 @@
 */
 void times_table(void)
 {
-for(int i=0;i<=9;i++){
-for(int j=0;j<=9;j++){
-int table =i*j;
+for (int i = 0;i <= 9;i++)
+{
+for (int j = 0;j <= 9;j++)
+{
+int table = i * j;
 _putchar("%d ",table);
 }
 _putchar("\n");
