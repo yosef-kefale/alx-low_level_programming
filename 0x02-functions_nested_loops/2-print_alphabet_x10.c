@@ -19,8 +19,3 @@ _putchar('\n');
 i++;
 }
 }
-int main(void)
-{
-print_alphabet();
-return (0);
-}
