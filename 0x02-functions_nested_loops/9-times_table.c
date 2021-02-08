@@ -19,5 +19,4 @@ _putchar(y);
 }
 _putchar('\n');
 }
-return (0);
 }
