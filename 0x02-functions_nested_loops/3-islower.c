@@ -3,7 +3,7 @@
 * _islower - does my stuff
 * @c: user input
 *
-* return(0): lower
+* Return(0): lower
 */
 int _islower(int c)
 {
