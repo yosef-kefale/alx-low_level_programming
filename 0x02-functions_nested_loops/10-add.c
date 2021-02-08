@@ -1,16 +1,14 @@
 #include "holberton.h"
 /**
 * add - calculates time table
-* @int: adds two inputs
-* @int: add two inputs
+* @a: adds two inputs
+* @b: add two inputs
 *
 * Return: multiplication.
 */
-int add(int, int)
+int add(int a, int b)
 {
 int sum;
-int a;
-int b;
 sum = a + b;
 return (sum);
 }
