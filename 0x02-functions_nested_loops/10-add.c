@@ -2,6 +2,7 @@
 /**
 * add - calculates time table
 * @int - adds two inputs
+* @int - add two inputs
 *
 * Return: multiplication.
 */
