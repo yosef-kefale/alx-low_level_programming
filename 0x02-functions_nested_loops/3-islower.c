@@ -1,8 +1,9 @@
 #include "holberton.h"
 /**
-* main - check the code for Holberton School students.
+* my_function - does my stuff
+* @c: user input
 *
-* Return: Always 0.
+*return(0): lower
 */
 int _islower(int c)
 {
