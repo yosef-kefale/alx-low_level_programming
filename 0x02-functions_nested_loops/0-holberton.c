@@ -1,5 +1,9 @@
 #include "holberton.h"
-int main()
+/**
+* main - random numbers
+* Return: last digit
+*/
+int main(void)
 {
 _putchar('H');
 _putchar('o');
