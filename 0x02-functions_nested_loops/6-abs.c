@@ -1,12 +1,13 @@
+#include <stdlib.h>
 #include "holberton.h"
-# /**
-#  * _abs - does my stuff
-#  * @int: user input
-#  *
-#  * Return: absolute
-#  */
-int _abs(int)
+/**
+* _abs - does my stuff
+* @m: user input
+*
+* Return: absolute.
+*/
+int _abs(int m)
 {
-int m = abs(200);
-Return(m);
+int result=(abs(m));
+ return (result);
 }
