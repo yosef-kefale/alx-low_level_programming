@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-* int _islower - does my stuff
+* _islower - does my stuff
 * @c: user input
 *
 * return(0): lower
