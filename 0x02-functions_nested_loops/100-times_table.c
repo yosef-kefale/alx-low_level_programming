@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "holberton.h"
 /**
 * print_times_table - does my stuff
 * print the alphabet
@@ -18,10 +18,13 @@ for (j = 0; j <= n; j++)
 int table = i * j;
 if (j != n)
 {
-printf("%d, ", table);
+_putchar('0' + table);
+_putchar(',');
+_putchar(' ');
+_putchar(' ');
 }
 else
-printf("%d", table);
+_putchar('0' + table);
 }
 printf("\n");
 }
