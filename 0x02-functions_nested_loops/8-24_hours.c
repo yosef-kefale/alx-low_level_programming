@@ -1,9 +1,9 @@
 #include "holberton.h"
 # /**
-#  * my_function - does my stuff
+#  * jack_bauer - does my stuff
 #  * @my_arg: its mine damnit
 #  *
-#  * Does my stuff explained.
+#  * Return: Does my stuff explained.
 #  */
 void jack_bauer(void)
 {
