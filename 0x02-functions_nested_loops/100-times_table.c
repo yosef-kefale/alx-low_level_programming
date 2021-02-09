@@ -11,22 +11,31 @@ int i;
 int j;
 if (n < 15 && n > 0)
 {
-for (i = 0; i <= n; i++)
+for (row = 0; row <= n; row++)
 {
-for (j = 0; j <= n; j++)
+for (column = 0; column <= n; column++)
 {
-int table = i * j;
-if (j != n)
+product = (row * column);
+if (column == 0)
 {
-_putchar('0' + table);
+_putchar('0' + product);
+}
+else if (product <= 9)
+{
 _putchar(',');
 _putchar(' ');
 _putchar(' ');
+_putchar('0' + product);
 }
-else
-_putchar('0' + table);
+else if (product > 9)
+{
+_putchar(',');
+_putchar(' ');
+_putchar('0' + (product / 10));
+_putchar('0' + (product % 10));
 }
-_putchar("\n");
+}
+_putchar('\n');
 }
 }
 }
