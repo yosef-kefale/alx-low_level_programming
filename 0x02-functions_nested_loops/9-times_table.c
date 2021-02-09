@@ -16,6 +16,7 @@ for (j = 0; j <= 9; j++)
 {
 y = i * j;
 _putchar(y);
+_putchar(' ' + (y));
 }
 _putchar('\n');
 }

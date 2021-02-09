@@ -22,5 +22,4 @@ _putchar('0' + (Minute % 10));
 _putchar ('\n');
 }
 }
-_putchar('\n');
 }
