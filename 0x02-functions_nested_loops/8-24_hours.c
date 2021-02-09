@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
 * jack_bauer - does my stuff
-* @my_arg: its mine damnit
+* @void: its mine damnit
 *
 * Return: Does my stuff explained.
 */
