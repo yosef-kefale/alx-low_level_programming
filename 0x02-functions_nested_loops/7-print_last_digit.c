@@ -1,11 +1,11 @@
 #include "holberton.h"
 /**
 * print_last_digit - does my stuff
-* @int: its mine damnit
+* @n: its mine damnit
 *
 * Return: last digit.
 */
-int print_last_digit(int)
+int print_last_digit(int n)
 {
 int Last;
 Last = n % 10;
