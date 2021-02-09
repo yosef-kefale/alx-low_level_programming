@@ -3,7 +3,7 @@
 * main - random numbers
 * Return: last digit
 */
-int multi(void)
+int main(){
 {
 int n = 1024;
 int remain3;
@@ -21,6 +21,4 @@ sum = sum + i;
 }
 printf("%d", sum);
 }
-int main(){
-multi();
-}
+
