@@ -26,7 +26,7 @@ _putchar(' ');
 else
 _putchar('0' + table);
 }
-printf("\n");
+_putchar("\n");
 }
 }
 }
