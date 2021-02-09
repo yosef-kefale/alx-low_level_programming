@@ -17,7 +17,7 @@ for (j = '0'; j <= '9'; j++)
 {
 r = i * j;
 rem = r / 10;
-if (rem >= 1))
+if (rem >= 1)
 {
 _putchar('0' + (r / 10));
 _putchar('0' + (r % 10));
