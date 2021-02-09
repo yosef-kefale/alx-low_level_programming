@@ -1,11 +1,12 @@
 #include <stdio.h>
+#include "holberton.h"
 /**
 * print_to_98 - does my stuff
 * print the alphabet
 *
 * @n: times
 */
-void print_to_98(int n)(int n)
+void print_to_98(int n)
 {
 int i;
 int j;
