@@ -5,7 +5,7 @@
 *
 * ten times
 */
-void dividend(void)
+int main(void)
 {
 int n = 1024;
 int remain3;
@@ -22,8 +22,4 @@ sum = sum + i;
 }
 }
 printf("%d\n", sum);
-}
-int main(void)
-{
-dividend();
 }
