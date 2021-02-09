@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
 * main - random numbers
-* last digit
+* Return: last digit
 */
-int main()
+int main(void)
 {
 int n = 1024;
 int remain3;
@@ -19,5 +19,5 @@ if (remain3 == 0 || remain5 == 0)
 sum = sum + i;
 }
 }
-printf("%d",sum);
+printf("%d", sum);
 }
