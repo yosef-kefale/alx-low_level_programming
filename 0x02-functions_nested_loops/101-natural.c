@@ -1,11 +1,11 @@
 #include <stdio.h>
 /**
-* dividend - does my stuff
+* main - does my stuff
 * print the alphabet
 *
 * ten times
 */
-int main(void)
+int main()
 {
 int n = 1024;
 int remain3;
