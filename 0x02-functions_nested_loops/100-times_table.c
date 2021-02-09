@@ -1,6 +1,7 @@
 #include "holberton.h"
 /**
 * print_times_table - prints the 9 times table
+* @n: user input
 */
 void print_times_table(int n)
 {
