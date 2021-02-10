@@ -17,6 +17,7 @@ for (i = 1; i <= n; i++)
 if (Fdigit == 1 || Fdigit == 2)
 {
 printf("%d, ", f2);
+printf(" ");
 }
 next = f1 + f2;
 f1 = f2;
