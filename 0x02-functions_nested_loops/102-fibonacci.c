@@ -18,7 +18,7 @@ for (i = 1; i <= n; i++)
 {
 if (i == 50)
 {
-printf("%d", f2);
+printf("%d\n", f2);
 }
 else
 {
