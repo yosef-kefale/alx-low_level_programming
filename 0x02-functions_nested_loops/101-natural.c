@@ -3,10 +3,10 @@
 * main - random numbers
 * Return: last digit
 */
-int main(){
+int main(void)
 {
 int n = 1024;
-int i;
+sint i;
 int remain3;
 int remain5;
 int sum;
