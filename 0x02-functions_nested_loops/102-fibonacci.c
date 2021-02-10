@@ -16,7 +16,7 @@ int next = f1 + f2;
 f1 = f2;
 f2 = next;
 }
-} 
+}
 int main()
 {
 printFibonacciNumbers(7);
