@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
 * printFibonacciNumbers - random numbers
-* main - mainf
 * @n: last digit
 */
 void printFibonacciNumbers(int n)
@@ -23,6 +22,10 @@ f1 = f2;
 f2 = next;
 }
 }
+/**
+* main - random numbers
+* @void: last digit
+*/
 int main(void)
 {
 printFibonacciNumbers(7);
