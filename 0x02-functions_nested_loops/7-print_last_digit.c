@@ -15,7 +15,8 @@ _putchar(Last + '0');
 else
 {
 Last = Last * -1;
-putchar(Last + '0');   
+_putchar(Last + '0');   
 }
 return (Last);
+}
 }
