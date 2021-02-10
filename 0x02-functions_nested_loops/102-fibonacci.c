@@ -20,7 +20,7 @@ if (n != 50)
 {
 printf("%d, ", f2);
 }
-else if (n == 50)
+else
 {
 printf("%d", f2);
 }
