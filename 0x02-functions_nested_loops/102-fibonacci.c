@@ -13,10 +13,12 @@ f1 = 0;
 f2 = 1;
 if (n < 1)
 return;
-printf("%d, ", f1);
+printf("%d", f1);
+printf(", ");
 for (i = 1; i < n; i++)
 {
 printf("%d ", f2);
+printf(", ");
 next = f1 + f2;
 f1 = f2;
 f2 = next;
