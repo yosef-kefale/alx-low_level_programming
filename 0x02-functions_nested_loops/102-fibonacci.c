@@ -24,7 +24,7 @@ f2 = next;
 }
 /**
 * main - random numbers
-* @void: last digit
+* last digit
 */
 int main(void)
 {
