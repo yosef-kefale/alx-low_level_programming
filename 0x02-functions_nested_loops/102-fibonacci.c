@@ -17,7 +17,7 @@ f1 = f2;
 f2 = next;
 }
 }
-int main()
+int main(void)
 {
 printFibonacciNumbers(7);
 return (0);
