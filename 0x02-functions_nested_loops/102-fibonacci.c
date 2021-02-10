@@ -14,7 +14,7 @@ f2 = 1;
 if (n < 1)
 return;
 printf("%d, ", f1);
-for (i = 1; i < n; i++)
+for (i = 1; i <= n; i++)
 {
 if (i == 50)
 {
