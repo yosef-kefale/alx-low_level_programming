@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
 * printFibonacciNumbers - random numbers
+* main - mainf
 * @n: last digit
 */
 void printFibonacciNumbers(int n)
