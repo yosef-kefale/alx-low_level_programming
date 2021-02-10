@@ -14,7 +14,7 @@ f1 = 0;
 f2 = 1;
 for (i = 1; i <= n; i++)
 {
-if (Fdigit == 1 || Fdigit == 1)
+if (Fdigit == 1 || Fdigit == 2)
 {
 printf("%d, ", f2);
 }
