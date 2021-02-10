@@ -16,14 +16,7 @@ return;
 printf("%d, ", f1);
 for (i = 1; i < n; i++)
 {
-if (n == 50)
-{
-printf("%d", f2);
-}
-else
-{
 printf("%d, ", f2);
-}
 next = f1 + f2;
 f1 = f2;
 f2 = next;
