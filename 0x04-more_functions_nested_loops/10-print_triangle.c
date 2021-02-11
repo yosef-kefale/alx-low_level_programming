@@ -16,7 +16,7 @@ _putchar('\n');
 }
 else
 {
-for (i = 0; i <= size; i++)
+for (i = 1; i <= size; i++)
 {
 for (j = size; j >= i; j--)
 {
@@ -26,7 +26,6 @@ for (k=1; k<=i; k++)
 {
 _putchar('#');
 }
-_putchar('\n');
 }
 }
 }
