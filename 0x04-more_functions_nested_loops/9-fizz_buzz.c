@@ -1,11 +1,11 @@
 #include <stdio.h>
 /**
-* print_square -checks for upper case
+* main -checks for upper case
 *
 * @size: return nothing
 * Return: 1 for digit and 0 for else
 */
-int main()
+int main(void)
 {
 int i;
 for(i = 1; i <= 100; i++)
