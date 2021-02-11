@@ -7,16 +7,12 @@
 */
 int _isupper(int c)
 {
-char i;
-for (i = 'A'; i = 'Z'; i++)
+char ch;
+for (ch = 'A' ; ch <= 'Z' ; ch++)
 {
-if (c == i)
-{
+if (ch == c)
 return (1);
-}
 else
-{
 return (0);
-}
 }
 }
