@@ -1,19 +1,13 @@
+  
 #include "holberton.h"
 /**
-* _isdigit -checks for upper case
-*
-* @c: input character
-* Return: 1 for digit and 0 for else
-*/
+ * _isdigit - check the code for Holberton School students.
+ * @c: characters
+ * Return: 1 and 0
+ */
 int _isdigit(int c)
 {
-char ch;
-for (ch = 48 ; ch <= 57 ; ch++)
-{
-if (ch == c)
+if (c >= 48 && c <= 57)
 return (1);
-else
-return (0);
-}
 return (0);
 }
