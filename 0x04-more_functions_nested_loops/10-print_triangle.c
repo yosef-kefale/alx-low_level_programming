@@ -14,12 +14,12 @@ for (i = 1; i <= size; i++)
 {
 for (j = 5; j >= i; j--)
 {
-_putschar(' ');
+_putchar(' ');
 }
 for (k=1; k<=i; k++)
 {
-_putschar('*');
+_putchar('*');
 }
-_putschar('\n');
+_putchar('\n');
 }
 }
