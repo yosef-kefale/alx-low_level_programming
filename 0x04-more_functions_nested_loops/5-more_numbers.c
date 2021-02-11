@@ -1,27 +1,20 @@
 #include "holberton.h"
 /**
-* print_most_numbers - print numbers 0-14
-*
-* @void: return nothing
-* Return: 1 for digit and 0 for else
-*/
+ * more_numbers - check the code for Holberton School students
+ * Return: success
+ */
 void more_numbers(void)
 {
-int i;
-int j;
+int i, j;
 for (i = 0; i <= 9; i++)
 {
-for (j = 0; j <= 14; j++)
+for (j = 0 ; j <= 14; j++)
 {
-if (j > 9)
-{
+if (j >= 10)
 _putchar('0' + (j / 10));
 _putchar('0' + (j % 10));
 }
-else{
-_putchar('0' + j);
-}
-}
 _putchar('\n');
 }
+return;
 }
