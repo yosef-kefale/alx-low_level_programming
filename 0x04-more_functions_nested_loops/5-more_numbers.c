@@ -15,7 +15,7 @@ for (i = 0; i <= 9; i++)
 for (j = 0; j <= 14; j++)
 {
 remain = j % 10;
-if (remain > 0)
+if (j > 9)
 {
 _putchar('0' + (j / 10));
 _putchar('0' + (j % 10));
