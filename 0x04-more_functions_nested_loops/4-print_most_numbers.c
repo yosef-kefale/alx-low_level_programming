@@ -5,7 +5,7 @@
 * @void: return nothing
 * Return: 1 for digit and 0 for else
 */
-void print_numbers(void)
+void print_most_numbers(void)
 {
 int i;
 for (i = 0; i <= 9; i++)
