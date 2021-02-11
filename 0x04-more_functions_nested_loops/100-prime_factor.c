@@ -7,7 +7,7 @@ int i;
 int max;
 max = -1;
 n = 612852475143;
-while( n % 2 == 0)
+while (n % 2 == 0)
 {
 max = 2;
 n = n / 2;
