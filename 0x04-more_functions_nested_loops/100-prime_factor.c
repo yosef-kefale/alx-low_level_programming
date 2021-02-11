@@ -1,5 +1,11 @@
 #include<stdio.h>
 #include<math.h>
+/**
+* main -checks for upper case
+*
+* @void: return nothing
+* Return: 1 for digit and 0 for else
+*/
 int main(void)
 {
 long n;
