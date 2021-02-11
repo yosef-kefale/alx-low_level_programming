@@ -2,7 +2,7 @@
 /**
 * mul - multiplies two inputs
 *
-* @c: input number
+* @a: input number
 * @b: input number
 * Return: multiplied result
 */
