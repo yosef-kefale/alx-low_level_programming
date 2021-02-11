@@ -13,6 +13,7 @@ for (i = 0; i <= n; i++)
 while (n > 0)
 {
 _putchar(' ');
+n--;
 }
 _putchar('\\');
 _putchar('\n');
