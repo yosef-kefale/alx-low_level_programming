@@ -5,7 +5,7 @@
 * @c: input character
 * Return: 1 for digit and 0 for else
 */
-int _isdigit(int c)(int c)
+int _isdigit(int c)
 {
 int ch;
 for (ch = 0 ; ch <= 9 ; ch++)
