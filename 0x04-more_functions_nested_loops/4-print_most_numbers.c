@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-* print_numbers -checks for upper case
+* print_most_numbers -checks for upper case
 *
 * @void: return nothing
 * Return: 1 for digit and 0 for else
