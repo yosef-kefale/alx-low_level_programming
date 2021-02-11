@@ -5,7 +5,7 @@
 * @size: return nothing
 * Return: 1 for digit and 0 for else
 */
-void FizzBuzz()
+int main()
 {
 int i;
 for(i = 1; i <= 100; i++)
@@ -26,8 +26,5 @@ else
 {
 printf("%d ",i);
 }
-}
-int main(void)
-{
-FizzBuzz(int size);
+printf("\n");
 }
