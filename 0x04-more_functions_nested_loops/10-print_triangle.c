@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-* main -checks for upper case
+* print_triangle -checks for upper case
 *
 * @size: return nothing
 * Return: 1 for digit and 0 for else
