@@ -5,7 +5,7 @@
 * @size: return nothing
 * Return: 1 for digit and 0 for else
 */
-void print_square(int size)
+void FizzBuzz()
 {
 int i;
 for(i = 1; i <= 100; i++)
@@ -29,5 +29,5 @@ printf("%d ",i);
 }
 int main(void)
 {
-
+FizzBuzz(int size);
 }
