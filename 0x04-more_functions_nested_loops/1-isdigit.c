@@ -7,8 +7,8 @@
 */
 int _isdigit(int c)
 {
-int ch;
-for (ch = 0 ; ch <= 9 ; ch++)
+char ch;
+for (ch = 48 ; ch <= 57 ; ch++)
 {
 if (ch == c)
 return (1);
