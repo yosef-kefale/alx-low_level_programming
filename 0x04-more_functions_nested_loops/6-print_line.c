@@ -1,16 +1,14 @@
 #include "holberton.h"
 /**
-* print_line -checks for upper case
-*
-* @n: return nothing
-* Return: 1 for digit and 0 for else
+* print_line - check the code for Holberton School students.
+* @n: integer
+* Return: Always 0.
 */
 void print_line(int n)
 {
 int i;
-for (i = 0; i <= n; i++)
-{
+for (i = 0; i < n; ++i)
 _putchar('_');
-}
 _putchar('\n');
+return;
 }
