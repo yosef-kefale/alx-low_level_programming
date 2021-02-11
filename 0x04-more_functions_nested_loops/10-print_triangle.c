@@ -6,19 +6,28 @@
 * Return: 1 for digit and 0 for else
 */
 void print_triangle(int size)
-{
 int i;
 int j;
-int k;
-for (i = 1; i <= size; i++)
+if (size <= 0)
 {
-for (j = size; j >= i; j--)
+_putchar('\n');
+}
+else
+{
+for(i = 0; i < size; i++)
+{
+for(j = 0; j < rows; j++)
+{
+if(j < rows-i-1)
 {
 _putchar(' ');
 }
-for (k=1; k<=i; k++)
+else
 {
 _putchar('#');
+}
+}
+_putchar('\n');
 }
 }
 }
