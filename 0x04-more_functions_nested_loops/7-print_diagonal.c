@@ -1,22 +1,24 @@
 #include "holberton.h"
 /**
-* print_diagonal -checks for upper case
-*
-* @n: return nothing
-* Return: 1 for digit and 0 for else
+* print_diagonal - check the code for Holberton School students.
+* @n: integer
+* Return: Always 0.
 */
 void print_diagonal(int n)
 {
-int i;
-for (i = 0; i <= n; i++)
+int i = 0;
+if(n < 0)
 {
-while (n > 0)
+_putchar('\n');
+}
+else
+{
+for(i = n; i < n; i++)
 {
 _putchar(' ');
-n--;
-}
 _putchar('\\');
 _putchar('\n');
 }
-_putchar('\n');
 }
+return;
+} 
