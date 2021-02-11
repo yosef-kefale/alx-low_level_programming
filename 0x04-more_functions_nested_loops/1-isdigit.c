@@ -1,4 +1,3 @@
-  
 #include "holberton.h"
 /**
  * _isdigit - check the code for Holberton School students.
