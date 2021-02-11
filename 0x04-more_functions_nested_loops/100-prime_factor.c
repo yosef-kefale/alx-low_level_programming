@@ -1,9 +1,9 @@
 #include<stdio.h>
 #include<math.h>
-main() {
-int n;
+int main() {
+long n;
 int i;
-int max;
+long max;
 max = -1;
 n = 612852475143;
 while(n % 2 == 0) {
@@ -22,6 +22,6 @@ if(n > 2)
 {
 max = n;
 }
-return max;
 printf("%d", max);
+return (0);
 }
