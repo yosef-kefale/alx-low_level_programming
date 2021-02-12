@@ -3,7 +3,7 @@
  * print_number - check the code for Holberton School students
  *
  * @n: input
- * Return: success
+ * print intigers
  */
 void print_number(int n)
 {
