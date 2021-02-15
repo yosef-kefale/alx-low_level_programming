@@ -21,6 +21,5 @@ s--;
 rvptr++;
 --i;
 }
-*s = *rvptr;
-_putchar('\n');  
+*s = *rvptr; 
 } 
