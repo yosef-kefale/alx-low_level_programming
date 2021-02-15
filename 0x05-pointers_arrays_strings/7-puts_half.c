@@ -13,7 +13,7 @@ int length = 0;
 temp2 = str;
 while (*temp2 != '\0')
 {
-halflength ++;
+halflength++;
 temp2++;
 }
 halflength = halflength / 2;
@@ -25,7 +25,7 @@ if (length >= halflength)
 _putchar(temp);
 }
 length++;
-str ++;
+str++;
 }
 _putchar('\n');
 }
