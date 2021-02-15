@@ -7,16 +7,16 @@
 void puts_half(char *str)
 {
 char temp;
+char temp2;
 int halflength = 0;
 int length = 0;
-/*
-while (*str != '\0')
+temp2 = *str;
+while (*temp2 != '\0')
 {
 halflength ++;
-str++;
+temp2++;
 }
-halflength = length / 2;
-*/
+halflength = halflength / 2;
 while (*str != '\0')
 {
 temp = *str;
