@@ -10,7 +10,7 @@ char temp;
 char *temp2;
 int halflength = 0;
 int length = 0;
-temp2 = *str;
+temp2 = str;
 while (*temp2 != '\0')
 {
 halflength ++;
