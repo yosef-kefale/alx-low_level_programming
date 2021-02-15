@@ -15,4 +15,5 @@ _putchar(temp);
 length++;
 str++;
 }
+_putchar('\n');
 }
