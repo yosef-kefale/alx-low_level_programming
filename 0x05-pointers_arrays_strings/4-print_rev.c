@@ -16,7 +16,7 @@ s++;
 for(i = length - 1; i >= 0; i--)
 {
 char temp;
-temp = *(str + i);
+temp = *(s + i);
 _putchar(temp);
 }
 _putchar('\n');
