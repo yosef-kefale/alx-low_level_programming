@@ -18,7 +18,7 @@ while (i >= 0)
 {
 s--;
 *rvptr = *s;
-s = rvptr;
+*s = rvptr;
 rvptr++;
 --i;
 }
