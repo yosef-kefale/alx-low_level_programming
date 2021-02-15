@@ -22,5 +22,4 @@ rvptr++;
 --i;
 }
 s = rvptr;
-_putchar('\n');
 }
