@@ -11,7 +11,11 @@ int i;
 char *begin_ptr;
 char *end_ptr;
 char ch; 
-l = strlen(s); 
+while (*s != '\0')
+{
+l++;
+s++;
+}
 begin_ptr = s; 
 end_ptr = s; 
 for (i = 0; i < l - 1; i++) 
