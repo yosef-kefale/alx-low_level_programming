@@ -22,4 +22,5 @@ void print_rev(char *s)
      rvptr++;
      --i;
     }
+    _putchar('\n');
 }
