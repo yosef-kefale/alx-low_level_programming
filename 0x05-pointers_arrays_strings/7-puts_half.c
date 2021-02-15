@@ -6,21 +6,27 @@
 */
 void puts_half(char *str)
 {
-char temp;
-int length = 0;
+char inputString[100];
+char leftHalf[100];
+char rightHalf[100];
+int length;
+int mid;
+int i;
+int k;
+inputString = str;
 while (*str != '\0')
 {
 length++;
 str++;
 }
-length = length / 2;
-str = str + length;
-while (*str != '\0')
-{
-temp = *str;
-_putchar(temp);
-length++;
-str++;
+mid = length/2;
+for(i = 0; i < mid; i++) {
+leftHalf[i]= inputString[i];
 }
-_putchar('\n');
+leftHalf[i] = '\0'; 
+for(i = mid, k = 0; i <= length; i++, k++) {
+rightHalf[k]= inputString[i];
+}
+str = rightHalf;
+return 0;
 }
