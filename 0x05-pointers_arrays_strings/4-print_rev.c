@@ -15,7 +15,9 @@ s++;
 }
 for(i = length - 1; i >= 0; i--)
 {
-_putchar(s[i]);
+char temp;
+temp = *(str + i);
+_putchar(temp);
 }
 _putchar('\n');
 }
