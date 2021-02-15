@@ -13,5 +13,4 @@ for(i=0;i<n;i++)
 
 _putchar(a[i]);
 }
-return (0);
 } 
