@@ -17,8 +17,8 @@ void print_rev(char *s)
     while(i >= 0)
     {
      s--;
-     *rvptr = *stptr;
-     _putchar(rvptr);
+     *rvptr = *s;
+     _putchar(*rvptr);
      rvptr++;
      --i;
     }
