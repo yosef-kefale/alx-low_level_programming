@@ -6,7 +6,7 @@
 */
 void print_rev(char *s)
 {
-    char revstr[50];
+    char revstr[100];
     char *rvptr = revstr;
     int i = -1;
     while(*s)
