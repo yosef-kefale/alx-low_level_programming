@@ -7,8 +7,7 @@
 */
 int _strlen(char *s)
 {
-char str = &s;
-char h[] = &s;
+char h[] = *s;
 int i;
 while (h[i] != '\0')
 {
