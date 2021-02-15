@@ -6,27 +6,33 @@
 */
 void puts_half(char *str)
 {
-char inputString[100];
-char leftHalf[100];
-char rightHalf[100];
-int length;
-int mid;
-int i;
-int k;
-inputString = str;
-while (*str != '\0')
+#include "holberton.h"
+/**
+* puts2 -change value using the pointer address
+*
+*@str: stores the input
+*/
+void puts2(char *str)
+{
+char temp;
+int halflength = 0;
+int length = 0;
+while (*s != '\0')
 {
 length++;
-str++;
+s++;
 }
-mid = length/2;
-for(i = 0; i < mid; i++) {
-leftHalf[i]= inputString[i];
+halflength = length / 2;
+while (*str != '\0')
+{
+temp = *str;
+if (length >= halflength)
+{
+_putchar(temp);
 }
-leftHalf[i] = '\0'; 
-for(i = mid, k = 0; i <= length; i++, k++) {
-rightHalf[k]= inputString[i];
+length++;
+str ++;
 }
-str = rightHalf;
-return 0;
+_putchar('\n');
+}
 }
