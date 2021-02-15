@@ -18,8 +18,8 @@ while (i >= 0)
 {
 s--;
 *rvptr = *s;
+s = rvptr;
 rvptr++;
 --i;
 }
-s = rvptr;
 }
