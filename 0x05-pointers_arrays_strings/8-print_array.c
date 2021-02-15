@@ -7,9 +7,8 @@
 */
 void print_array(int *a, int n)
 {
-int a[1000];
-int i;
-int n;  
+a[1000];
+int i; 
 for(i=0;i<n;i++)
 {
 printf("%d,  ", a[i]);
