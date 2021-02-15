@@ -6,14 +6,6 @@
 */
 void puts_half(char *str)
 {
-#include "holberton.h"
-/**
-* puts2 -change value using the pointer address
-*
-*@str: stores the input
-*/
-void puts2(char *str)
-{
 char temp;
 int halflength = 0;
 int length = 0;
