@@ -9,12 +9,14 @@ void puts_half(char *str)
 char temp;
 int halflength = 0;
 int length = 0;
+/*
 while (*str != '\0')
 {
-length++;
+halflength ++;
 str++;
 }
 halflength = length / 2;
+*/
 while (*str != '\0')
 {
 temp = *str;
