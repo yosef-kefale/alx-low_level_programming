@@ -10,8 +10,7 @@ int i;
 char temp;
 int length = 0;
 char str[100];
-temp = *s;
-str = temp;
+str = *s;
 while (*s != '\0')
 {
 length++;
