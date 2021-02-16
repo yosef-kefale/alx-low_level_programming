@@ -6,8 +6,8 @@
 */
 void rev_string(char *s)
 {
+int i;
 char *temp=s;
-*temp = s;
 int length = 0;
 while (*temp != '\0')
 {
@@ -15,7 +15,8 @@ length++;
 temp++;
 }
 int last_pos = length-1;
-for(int i = 0; i < length/2; i++)
+halflength = length / 2;
+for(int i = 0; i < halflength; i++)
 {
 char tmp = s[i];
 s[i] = s[last_pos - i];
