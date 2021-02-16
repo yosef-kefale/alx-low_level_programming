@@ -6,9 +6,11 @@
 */
 void puts2(char *str)
 {
+char *temp;
 while (*str != '\0')
 {
-_putchar(str);
+temp = *src;
+_putchar(temp);
 str += 2;
 }
 _putchar('\n');
