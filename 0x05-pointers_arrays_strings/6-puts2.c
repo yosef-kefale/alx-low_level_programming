@@ -7,7 +7,6 @@
 void puts2(char *str)
 {
 char temp;
-int length = 0;
 while (*str != '\0')
 {
 temp = *str;
