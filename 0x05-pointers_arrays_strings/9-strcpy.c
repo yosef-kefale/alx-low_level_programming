@@ -3,7 +3,7 @@
 *(*_strcpy) - change value using
 *@dest: stores the input
 *@src: integer
-*Return: dest
+* Return: success
 */
 char *_strcpy(char *dest, char *src)
 {
