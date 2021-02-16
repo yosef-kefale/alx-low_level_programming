@@ -9,7 +9,7 @@ void puts_half(char *str)
 char *temp = str;
 char rightHalf[100];
 int length;
-int mid
+int mid;
 int i;
 int k;
 length = 0;
