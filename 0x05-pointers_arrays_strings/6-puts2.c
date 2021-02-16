@@ -6,12 +6,14 @@
 */
 void puts2(char *str)
 {
-char *temp;
-while (*str != '\0')
+int i, c = 0;
+while (str[c])
 {
-temp = *src;
-_putchar(temp);
-str += 2;
+c++;
+}
+for (i = 0; i < c; i += 2)
+{
+_putchar(str[i]);
 }
 _putchar('\n');
 }
