@@ -22,4 +22,5 @@ str++;
  rightHalf[k]= temp[i];
      _putchar(rightHalf[k]);
     }
+    _putchar('\n');
 }
