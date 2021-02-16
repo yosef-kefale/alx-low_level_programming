@@ -13,7 +13,7 @@ length = 0;
 while (*temp != '\0')
 {
 length++;
-str++;
+temp++;
 }
 
     mid = length/2;
