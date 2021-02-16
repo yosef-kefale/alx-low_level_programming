@@ -10,7 +10,12 @@ void puts_half(char *str)
     char rightHalf[100];
     int length, mid, i, k;
 
-    length = strlen(temp);
+    int length = 0;
+while (*temp != '\0')
+{
+length++;
+str++;
+}
 
     mid = length/2;
     for(i = mid, k = 0; i <= length; i++, k++) {
