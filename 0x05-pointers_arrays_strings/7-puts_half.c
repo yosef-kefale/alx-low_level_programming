@@ -22,7 +22,7 @@ if ((length % 2) != 0)
 {
 mid = (length - 1) / 2;
 }
-else
+else if ((length % 2) == 0)
 {
 mid = length / 2;
 }
