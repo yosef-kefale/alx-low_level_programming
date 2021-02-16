@@ -18,7 +18,14 @@ while (*str != '\0')
 length++;
 str++;
 }
+if ((length % 2) != 0)
+{
+mid = (length - 1) / 2;
+}
+else
+{
 mid = length / 2;
+}
 for (i = mid, k = 0; i <= length; i++, k++)
 {
 rightHalf[k] = temp[i];
