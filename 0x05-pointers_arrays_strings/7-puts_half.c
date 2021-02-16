@@ -16,7 +16,14 @@ while (*temp2 != '\0')
 halflength++;
 temp2++;
 }
+if ((length % 2) != 0)
+{
+halflength = (halflength - 1) / 2;
+}
+else
+{
 halflength = halflength / 2;
+}
 while (*str != '\0')
 {
 temp = *str;
