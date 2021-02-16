@@ -16,7 +16,7 @@ temp++;
 }
 int last_pos = length-1;
 halflength = length / 2;
-for(int i = 0; i < halflength; i++)
+for(i = 0; i < halflength; i++)
 {
 char tmp = s[i];
 s[i] = s[last_pos - i];
