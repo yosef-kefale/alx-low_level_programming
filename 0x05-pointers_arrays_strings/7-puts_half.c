@@ -6,30 +6,14 @@
 */
 void puts_half(char *str)
 {
-char *temp = str;
-char rightHalf[100];
-int length;
-int mid;
-int i;
-int k;
-length = 0;
-while (*str != '\0')
+int c = 0;
+while (str[c])
 {
-length++;
-str++;
+c++;
 }
-if ((length % 2) != 0)
-{
-mid = (length - 1) / 2;
-}
-else if ((length % 2) == 0)
-{
-mid = length / 2;
-}
-for (i = mid, k = 0; i <= length; i++, k++)
-{
-rightHalf[k] = temp[i];
-_putchar(rightHalf[k]);
+c = (c-1) / 2;
+while (str[++c])
+_putchar(str[c]);
 }
 _putchar('\n');
 }
