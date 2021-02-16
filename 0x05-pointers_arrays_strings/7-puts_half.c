@@ -18,8 +18,8 @@ while (*str != '\0')
 length++;
 str++;
 }
-mid = length/2;
-for(i = mid, k = 0; i <= length; i++, k++)
+mid = length / 2;
+for (i = mid, k = 0; i <= length; i++, k++)
 {
 rightHalf[k] = temp[i];
 _putchar(rightHalf[k]);
