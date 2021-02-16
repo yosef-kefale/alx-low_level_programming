@@ -12,7 +12,7 @@ int length;
 int k;
 int i;
 int mid;
-int length = 0;
+length = 0;
 while (*temp != '\0')
 {
 length++;
