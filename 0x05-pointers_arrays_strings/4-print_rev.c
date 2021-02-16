@@ -13,7 +13,7 @@ char *temp = s;
 char rev[100];
 for (i = 0; temp[i] != '\0'; i++)
 {
-k = i - 1;
+k = i;
 }
 for (j = 0; j <= i - 1; j++)
 {
