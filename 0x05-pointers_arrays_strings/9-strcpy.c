@@ -1,10 +1,10 @@
 #include "holberton.h"
 /**
-*_strcpy - change value using
+* *_strcpy - change value using
 *@dest: stores the input
 *@src: integer
 */
-char *_strcpy(char *dest,char *src)
+char *_strcpy(char *dest, char *src)
 {
 int index = 0;
 while (src[index])
