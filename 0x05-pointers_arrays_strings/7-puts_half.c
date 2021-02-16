@@ -21,8 +21,8 @@ temp++;
 mid = length/2;
 for (i = mid, k = 0; i <= length; i++, k++)
 {
-_putchar(rightHalf[k]);
-rightHalf[k] = temp[i];
+_putchar(str[k]);
+str[k] = temp[i];
 }
 _putchar(temp[i]);
 }
