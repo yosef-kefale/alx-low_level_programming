@@ -1,3 +1,4 @@
+Yoseph, [16.02.21 19:49]
 #include "holberton.h"
 /**
 * puts_half -change value using the pointer address
