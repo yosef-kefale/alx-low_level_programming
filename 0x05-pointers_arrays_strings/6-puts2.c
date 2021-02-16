@@ -12,7 +12,6 @@ while (*str != '\0')
 {
 temp = *str;
 _putchar(temp);
-length++;
 str += 2;
 }
 _putchar('\n');
