@@ -18,6 +18,6 @@ void print_rev(char *s)
         rev[j] = temp[k];
         k--;
     }
-    _putchar('%s', rev);
+    _putchar(rev);
   _putchar('\n');
 }
