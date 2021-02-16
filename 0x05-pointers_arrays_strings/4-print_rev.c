@@ -15,7 +15,7 @@ for (i = 0; temp[i] != '\0'; i++)
 {
 k = i - 1;
 }
-for (j = 0; j <= i - 1; j++)
+for (j = 0; j <= i; j++)
 {
 rev[j] = temp[k];
 _putchar(rev[j]);
