@@ -24,4 +24,5 @@ for (i = mid, k = 0; i <= length; i++, k++)
 _putchar(rightHalf[k]);
 rightHalf[k] = temp[i];
 }
+_putchar(temp[i]);
 }
