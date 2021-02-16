@@ -21,5 +21,5 @@ s--;
 rvptr++;
 --i;
 }
-*s = *rvptr; 
-} 
+*s = *rvptr;
+}
