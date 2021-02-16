@@ -15,5 +15,5 @@ src++;
 dest++; 
 } 
 *dest = '\0'; 
-return (ptrdest);
+return (*ptrdest);
 }
