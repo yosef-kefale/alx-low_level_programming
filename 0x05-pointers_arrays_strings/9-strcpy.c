@@ -7,9 +7,12 @@
 */
 char *_strcpy(char *dest, char *src)
 {
-char text1[1000], text2[1000];
-    char * src = text1;
-    char * dest = text2; 
-    while(*(str2++) = *(str1++));
-    return (dest);
+while(*src!='\0') 
+	{ 
+	*dest = *src; 
+	src++; 
+	dest++; 
+	} 
+	*dest='\0'; 
+  return (*dest);
 }
