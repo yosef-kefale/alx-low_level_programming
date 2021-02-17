@@ -1,14 +1,21 @@
 #include "holberton.h"
 /**
-* _atoi -change value using the pointer address
+*_atoi - change value using
 *
-*@s: stores the input
-*Return: res
+*@s: character
+*Return: int
 */
 int _atoi(char *s)
 {
-int res = 0;
-for (int i = 0; s[i] != '\0'; ++i)
-res = res * 10 + s[i] - '0';
-return (res);
+int sign = 1;
+unsigned int num = 0;
+do {
+if (*s == '-')
+sign *= -1;
+else if (*s >= '0' && *s <= '9')
+num = (num * 10) + (*s - '0');
+else if (num > 0)
+break;
+} while (*s++);
+return (num *sign);
 }
