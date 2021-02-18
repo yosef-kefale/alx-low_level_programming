@@ -14,25 +14,25 @@ int e;
 		if(c >='A' && c <='Z')
 		{
 			if((e = c + ROT) <= 'Z')
-				putchar(e);
+				_putchar(e);
 			else
 			{
 				   e = c - ROT;
-				putchar(e);
+				_putchar(e);
 			}
 		}
 		else if(c >='a' && c <='z')
 		{
 			if((e= c + ROT) <= 'z')
-				putchar(e);
+				_putchar(e);
 			else
 			{
 				e = c - ROT;
-				putchar(e);
+				_putchar(e);
 			}
 		}
 		else
-			putchar(c);
+			_putchar(c);
 	}
 
 return (c);
