@@ -13,10 +13,16 @@ int i;
 int j;
 i = 0;
 j = 0;
+if (dest == NULL)
+return NULL;
+else
+{
 for (i = 0; i <= n; i++)
 {
-dest[i] = src[j];
+dest[i] = temp[j];
 j++;
 }
+//dest[i] = '\0';
 return (dest);
+}
 }
