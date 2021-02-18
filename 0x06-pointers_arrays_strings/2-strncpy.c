@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-* _strncat -concatinate string
+* _strncpy -concatinate string
 *
 *@dest: stores the input
 *@src: source
@@ -13,7 +13,7 @@ int i;
 int j;
 i = 0;
 j = 0;
-for (i = 0;i <= n; i++)
+for (i = 0; i <= n; i++)
 {
 dest[i] = src[j];
 j++;
