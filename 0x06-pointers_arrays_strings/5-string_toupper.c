@@ -2,10 +2,8 @@
 /**
 * string_toupper -concatinate string
 *
-*@dest: stores the input
-*@src: source
-*@n: number of characters
-*Return: dest
+*@s: stores the input
+*Return: uppercase string
 */
 char *string_toupper(char *s)
 {
