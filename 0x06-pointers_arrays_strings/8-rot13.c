@@ -1,20 +1,39 @@
 #include "holberton.h"
+#define ROT 13
 /**
-* string_toupper -concatinate string
+* rot13 -concatinate string
 *
-*@s: stores the input
+*@c: stores the input
 *Return: uppercase string
 */
-char *rot13(char *)
+char *rot13(char *c)
 {
-int c = 0;
-while (s[c] != '\0')
-{
-if (s[c] >= 'a' && s[c] <= 'z')
-{
-s[c] = s[c] - 32;
-}
-c++;
-}
-return (s);
+int e;
+	while((c=getchar())!=EOF)
+	{
+		if(c >='A' && c <='Z')
+		{
+			if((e = c + ROT) <= 'Z')
+				putchar(e);
+			else
+			{
+				   e = c - ROT;
+				putchar(e);
+			}
+		}
+		else if(c >='a' && c <='z')
+		{
+			if((e= c + ROT) <= 'z')
+				putchar(e);
+			else
+			{
+				e = c - ROT;
+				putchar(e);
+			}
+		}
+		else
+			putchar(c);
+	}
+
+return (c);
 }
