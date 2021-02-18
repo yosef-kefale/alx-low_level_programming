@@ -1,36 +1,23 @@
 #include "holberton.h"
 /**
- * charac - determines if character is a deliminater character
- * @c: char to check on
- * Return: 1 or 0
+ * leet - to number
+ * @s: char params
+ * Return: suceess
  */
-int charac(char c)
-{
-if (c == ' ' || c == '\t' || c == '\n' || c == ',' || c == ';' || c == '.' || c == '!' || c == '?' || c == '"' ||
-    c == '(' || c == ')' || c == '{' || c == '}')
-return (1);
-return (0);
-}
-/**
- * cap_string - capitalizes chars 
- * @s: string 
- * Return: return s
- */
-char *cap_string(char *s)
+char *leet(char *s)
 {
 int i;
-i = 0;
-if (s[i] >= 'a' && s[i] <= 'z')
-s[i] -= 32;
-while (s[i] != '\0')
+int j;
+char l[] = "ol_ea__t";
+for (i = 0; s[i] != '\0'; i++)
 {
-if (charac(s[i]) == 1 && (s[i + 1] >= 'a' && s[i + 1] <= 'z'))
+for (j = 0; l[j] != '\0'; j++)
 {
-s[i + 1] -= 32;
-i++;
+if (s[i] == l[j] || s[i] == (l[j] - 32))
+{
+s[i] = j + '0';
 }
-else
-i++;
+}
 }
 return (s);
 }
