@@ -1,25 +1,23 @@
 #include "holberton.h"
-/
-  * print_number - print numbers chars
-  * @n: integer params
-  * Return: 0
- /
-
-void print_number(int n)
+/**
+ * leet - to number
+ * @s: char params
+ * Return: suceess
+ */
+char *leet(char *s)
 {
- unsigned int n1;
-
- n1 = n;
-
- if (n < 0)
- {
-  _putchar('-');
-  n1 = -n;
- }
-
- if (n1 / 10 != 0)
- {
-  print_number(n1 / 10);
- }
- _putchar((n1 % 10) + '0');
+int i;
+int j;
+char l[] = "ol_ea__t";
+for (i = 0; s[i] != '\0'; i++)
+{
+for (j = 0; l[j] != '\0'; j++)
+{
+if (s[i] == l[j] || s[i] == (l[j] - 32))
+{
+s[i] = j + '0';
+}
+}
+}
+return (s);
 }
