@@ -22,7 +22,6 @@ for (i = 0; i <= n; i++)
 dest[i] = temp[j];
 j++;
 }
-//dest[i] = '\0';
 return (dest);
 }
 }
