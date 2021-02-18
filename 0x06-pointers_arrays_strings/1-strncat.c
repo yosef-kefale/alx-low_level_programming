@@ -1,9 +1,10 @@
 #include "holberton.h"
 /**
-* _strcat -change value using the pointer address
+* _strncat -concatinate string
 *
 *@dest: stores the input
 *@src: source
+*@n: number of characters
 *Return: dest
 */
 char *_strncat(char *dest, char *src, int n)
