@@ -5,7 +5,7 @@
 *@str: stores the input
 *Return: uppercase string
 */
-char *cap_string(char *)
+char *cap_string(char *str)
 {
 int i;
 for (i = 0; str[i] != '\0'; i++)
