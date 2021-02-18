@@ -1,34 +1,36 @@
 #include "holberton.h"
 /**
-* cap_string -concatinate string
-*
-*@str: stores the input
-*Return: uppercase string
-*/
-char *cap_string(char *str)
+ * charac - determines if character is a deliminater character
+ * @c: char to check on
+ * Return: 1 or 0
+ */
+int charac(char c)
+{
+if (c == ' ' || c == '\t' || c == '\n' || c == ',' || c == ';' || c == '.' || c == '!' || c == '?' || c == '"' ||
+    c == '(' || c == ')' || c == '{' || c == '}')
+return (1);
+return (0);
+}
+/**
+ * cap_string - capitalizes chars 
+ * @s: string 
+ * Return: return s
+ */
+char *cap_string(char *s)
 {
 int i;
-for (i = 0; str[i] != '\0'; i++)
+i = 0;
+if (s[i] >= 'a' && s[i] <= 'z')
+s[i] -= 32;
+while (s[i] != '\0')
 {
-if (i == 0)
+if (charac(s[i]) == 1 && (s[i + 1] >= 'a' && s[i + 1] <= 'z'))
 {
-if ((str[i] >= 'a' && str[i] <= 'z'))
-str[i] = str[i] - 32;
-continue;
-}
-if (str[i] == ' ')
-{
-++i;
-if (str[i] >= 'a' && str[i] <= 'z')
-{
-str[i] = str[i] - 32;
-}
+s[i + 1] -= 32;
+i++;
 }
 else
-{
-if (str[i] >= 'A' && str[i] <= 'Z')
-str[i] = str[i] + 32;
+i++;
 }
-}
-return (str);
+return (s);
 }
