@@ -14,7 +14,7 @@ int j;
 i = 0;
 j = 0;
 if (dest == NULL)
-return NULL;
+return (NULL);
 else
 {
 for (i = 0; i <= n; i++)
