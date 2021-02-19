@@ -1,4 +1,3 @@
-  
 #include "holberton.h"
 /**
 * _strncpy -concatinate string
