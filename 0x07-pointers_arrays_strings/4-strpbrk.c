@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-* _strspn -check character in a string
+* _strpbrk -check character in a string
 *
 *@s: source
 *@accept: character
@@ -8,34 +8,15 @@
 */
 char *_strpbrk(char *s, char *accept)
 {
-int acceptL;
-int sLength;
-int i;
-int j;
-int k;
-i = 0;
-j = 0;
-k = 0;
-while (s[i] != '\0')
+unsigned int i, j;
+for (i = 0; s[i] != '\0'; i++)
 {
-acceptL++;
-}
-while (accept[i] != '\0')
+for (j = 0; accept[j] != '\0'; j++)
 {
-sLength++;
-}
-for(i = 0 ; i < sLength; i++)
-{
-for(j = 0; j < acceptL; j++)
-{
-if(s[i] == accept[j])
-{
-for(k = i; s[k]!= '\0'; k++)
-{
+if (*s == accept[j])
 return (s);
 }
-}
-}
+s++;
 }
 return (0);
 }
