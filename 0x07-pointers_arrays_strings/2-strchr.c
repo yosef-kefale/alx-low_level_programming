@@ -1,11 +1,10 @@
 #include "holberton.h"
 /**
-* _memcpy -memset
+* _strchr -check character in a string
 *
-*@src: source
-*@dest: destination
-*@n: number of characters
-*Return: dest
+*@s: source
+*@c: character
+*Return: pointer
 */
 char *_strchr(char *s, char c)
 {
@@ -16,12 +15,12 @@ while (s[i] != '\0')
 i++;
 }
 for (index = 0; index < i; index++)
-if (s[index] == 'c')
+if (s[index] == c)
 {
 return (s[index]);
 }
 else
 {
-return (NULL);
+return ('\0');
 }
 }
