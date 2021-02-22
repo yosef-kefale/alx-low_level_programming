@@ -23,5 +23,5 @@ if (*p == '\0')
 return (start);
 }
 }
-return (\n);
+return (0);
 }
