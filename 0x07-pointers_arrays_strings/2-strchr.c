@@ -18,7 +18,7 @@ i++;
 for (index = 0; index < i; index++)
 if (s[index] == c)
 {
-memory = s[index];
+memory = &s[index];
 return (memory);
 }
 else
