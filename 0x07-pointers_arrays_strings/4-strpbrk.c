@@ -28,8 +28,8 @@ for(j = 0; j < acceptL; j++)
 if(s[i] == accept[j])
 {
 for(k = i; s[k]!= '\0'; k++)
-printf("%c",s[k]);
-return (0);
+{
+return (s);
 }
 }
 }
