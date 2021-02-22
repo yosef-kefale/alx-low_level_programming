@@ -20,5 +20,6 @@ if (*s == c)
 {                                                                                                                      
 return (s);
 }
-return (NULL);
+return ('\0');
+return (0);
 }
