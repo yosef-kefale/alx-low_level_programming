@@ -8,22 +8,17 @@
 */
 char *_strchr(char *s, char c)
 {
-int index;
-int i;
-char *memory = s;
-while (s[i] != '\0')
+while (*s != '\0')
 {
-i++;
-}
-for (index = 0; index < i; index++)
-if (s[index] == c)
+if (*s == c)
 {
-memory = memory + index;
-return (memory);
+return (s);
 }
-else
-{
-return ('\0');
+s++;
+}                                                                                                                    
+if (*s == c)                                                                                                        
+{                                                                                                                      
+return (s);
 }
-return (0);
+return (NULL);
 }
