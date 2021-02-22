@@ -1,23 +1,30 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
-* print_diagsums -concatinate string
+*print_diagsums - print character in a string
 *
-*@a: stores the input
-*@size: length
-*Return: sum
+*@a: print char
+*@size: sizes
+*Return: number of characters
 */
 void print_diagsums(int *a, int size)
 {
-int sum = 0;
-int i;
-int j;
-for (i = 0; i < size; i++)
-{ 
-for (j = 0; j < size; j++)
-{ 
-if (i == j) 
-sum += a[i][j]; 
-} 
-}
-_putchar("%d",sum);
+int sum1, sum2, i, max;
+
+	i = sum1 = sum2 = 0;
+	max = size * size;
+
+	while (i < max)
+	{
+		sum1 += a[i];
+		i = i + size + 1;
+	}
+	i = size - 1;
+	while (i < (max - 1))
+	{
+		sum2 += a[i];
+		i = i + (size - 1);
+	}
+
+	printf("%d, %d\n", sum1, sum2);
 }
