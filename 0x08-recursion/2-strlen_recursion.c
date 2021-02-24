@@ -11,7 +11,7 @@ length = 0;
 if (*s)
 {
 length++;
-_print_rev_recursion(s+1);
+_strlen_recursion(s+1);
 }
 else
 {
