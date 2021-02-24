@@ -1,12 +1,13 @@
 #include "holberton.h"
 /**
-* factorial -factorial calculator
+* _pow_recursion -factorial calculator
 *
-*@n: factorial number
+*@x: base
+*@y: exponent
 */
 int _pow_recursion(int x, int y)
 {
-if(y == 0)
+if (y == 0)
 {
 return (1);
 }
