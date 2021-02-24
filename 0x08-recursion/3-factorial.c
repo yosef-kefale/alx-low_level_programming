@@ -3,6 +3,7 @@
 * factorial -factorial calculator
 *
 *@n: factorial number
+*Return: factorial
 */
 int factorial(int n)
 {
