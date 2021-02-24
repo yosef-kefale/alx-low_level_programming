@@ -19,6 +19,7 @@ i = n / 2;
     else
        {
          i = i -1; 
-         is_prime_number(n1);
+         is_prime_number(n);
       }
+ return (0);
 }
