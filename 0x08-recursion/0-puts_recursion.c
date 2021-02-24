@@ -19,6 +19,6 @@ if (i > length)
 {
 return;
 }
-_putchar(*s[i]);
+_putchar(*(s[i]));
 _puts_recursion(s + 1);
 }
