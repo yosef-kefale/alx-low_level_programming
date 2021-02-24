@@ -1,10 +1,8 @@
 #include "holberton.h"
 /**
-* _memset -memset
+* _puts_recursion -recurssion
 *
-*@s: pointer
-*@b: value to be saved
-*@n: number of characters
+*@s: string
 *Return: dest
 */
 void _puts_recursion(char *s)
@@ -21,6 +19,6 @@ if (i > length)
 {
 return;
 }
-_putchar(s[i]);
+_putchar(*s[i]);
 _puts_recursion(s + 1);
 }
