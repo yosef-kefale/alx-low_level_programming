@@ -7,18 +7,9 @@
 */
 void _puts_recursion(char *s)
 {
-int length;
-int i;
-i = 0;
-length = 0;
-while (s != '\0')
+if (*s)
 {
-length++;
-}
-if (i > length)
-{
-return;
-}
-_putchar(*(s[i]));
+_putchar(s[i]);
 _puts_recursion(s + 1);
+}
 }
