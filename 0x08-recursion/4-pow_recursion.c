@@ -10,7 +10,7 @@ if(y == 0)
 {
 return (1);
 }
-els if (y < 0)
+else if (y < 0)
 {
 return (-1);
 }
