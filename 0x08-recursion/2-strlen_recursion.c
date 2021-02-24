@@ -15,5 +15,7 @@ _print_rev_recursion(s+1);
 else
 {
 return (length);
+_putchar('\n');
 }
+return (0);
 }
