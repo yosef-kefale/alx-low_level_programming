@@ -4,6 +4,7 @@
 *
 *@x: base
 *@y: exponent
+*Return: exponential
 */
 int _pow_recursion(int x, int y)
 {
