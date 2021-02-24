@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-* _pow_recursion -factorial calculator
+*_pow_recursion -factorial calculator
 *
 *@x: base
 *@y: exponent
