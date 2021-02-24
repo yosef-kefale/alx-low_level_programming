@@ -6,7 +6,7 @@
 */
 int _pow_recursion(int x, int y)
 {
-if(exponent == 0)
+if(y == 0)
 {
 return (1);
 }
