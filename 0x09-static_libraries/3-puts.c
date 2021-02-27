@@ -4,7 +4,7 @@
 *
 *@str: stores the input
 */
-void _puts(char *str)
+void _puts(char *s)
 {
 char temp;
 int length = 0;
