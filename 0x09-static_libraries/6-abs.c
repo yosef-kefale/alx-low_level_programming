@@ -6,7 +6,7 @@
 *
 * Return: absolute.
 */
-int _abs(int m)
+int _abs(int n);
 {
 int result = (abs(m));
 return (result);
