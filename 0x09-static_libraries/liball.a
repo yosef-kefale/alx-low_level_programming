@@ -1,0 +1,415 @@
+!<arch>
+0-isupper.c/    1614354534  0     0     100644  204       `
+#include "holberton.h"
+/**
+ * _isupper - check the code for Holberton School students.
+ * @c: characters
+ * Return: 1 and 0
+ */
+int _isupper(int c)
+{
+if (c >= 65 && c <= 90)
+{
+return (1);
+}
+return (0);
+}
+0-memset.c/     1614354534  0     0     100644  302       `
+#include "holberton.h"
+/**
+* _memset -memset
+*
+*@s: pointer
+*@b: value to be saved
+*@n: number of characters
+*Return: dest
+*/
+char *_memset(char *s, char b, unsigned int n)
+{
+unsigned int index;
+char *memory = s, value = b;
+for (index = 0; index < n; index++)
+memory[index] = value;
+return (memory);
+}
+0-strcat.c/     1614354534  0     0     100644  323       `
+#include "holberton.h"
+/**
+* _strcat -change value using the pointer address
+*
+*@dest: stores the input
+*@src: source
+*Return: dest
+*/
+char *_strcat(char *dest, char *src)
+{
+int i;
+int j;
+i = 0;
+while (dest[i] != '\0')
+{
+i++;
+}
+j = 0;
+while (src[j] != '\0')
+{
+dest[i] = src[j];
+i++;
+j++;
+}
+dest[i] = '\0';
+return (dest);
+}
+
+1-isdigit.c/    1614354534  0     0     100644  200       `
+#include "holberton.h"
+/**
+ * _isdigit - check the code for Holberton School students.
+ * @c: characters
+ * Return: 1 and 0
+ */
+int _isdigit(int c)
+{
+if (c >= 48 && c <= 57)
+return (1);
+return (0);
+}
+1-memcpy.c/     1614354534  0     0     100644  301       `
+#include "holberton.h"
+/**
+* _memcpy -memset
+*
+*@src: source
+*@dest: destination
+*@n: number of characters
+*Return: dest
+*/
+char *_memcpy(char *dest, char *src, unsigned int n)
+{
+unsigned int index;
+char *memory = src;
+for (index = 0; index < n; index++)
+dest[index] = memory[index];
+return (dest);
+}
+
+1-strncat.c/    1614354534  0     0     100644  329       `
+#include "holberton.h"
+/**
+* _strncat -concatinate string
+*
+*@dest: stores the input
+*@src: source
+*@n: number of characters
+*Return: dest
+*/
+char *_strncat(char *dest, char *src, int n)
+{
+int i;
+int j;
+i = 0;
+j = 0;
+while (dest[i] != '\0')
+{
+i++;
+}
+while (j < n)
+{
+dest[i] = src[j];
+i++;
+j++;
+}
+dest[i] = '\0';
+return (dest);
+}
+
+100-atoi.c/     1614354534  0     0     100644  304       `
+#include "holberton.h"
+/**
+*_atoi - change value using
+*
+*@s: character
+*Return: int
+*/
+int _atoi(char *s)
+{
+int sign = 1;
+unsigned int num = 0;
+do {
+if (*s == '-')
+sign *= -1;
+else if (*s >= '0' && *s <= '9')
+num = (num * 10) + (*s - '0');
+else if (num > 0)
+break;
+} while (*s++);
+return (num *sign);
+}
+2-strchr.c/     1614354534  0     0     100644  263       `
+#include "holberton.h"
+/**
+* _strchr -check character in a string
+*
+*@s: source
+*@c: character
+*Return: pointer
+*/
+char *_strchr(char *s, char c)
+{
+while (*s != '\0')
+{
+if (*s == c)
+{
+return (s);
+}
+s++;
+}
+if (*s == c)
+{
+return (s);
+}
+return ('\0');
+return (0);
+}
+
+2-strlen.c/     1614354534  0     0     100644  216       `
+#include "holberton.h"
+/**
+* _strlen -change value using the pointer address
+*
+*@s: stores the input
+*Return: length
+*/
+int _strlen(char *s)
+{
+int length = 0;
+while (*s != '\0')
+{
+length++;
+s++;
+}
+return (length);
+}
+2-strncpy.c/    1614354534  0     0     100644  332       `
+#include "holberton.h"
+/**
+* _strncpy -concatinate string
+*
+*@dest: stores the input
+*@src: source
+*@n: number of characters
+*Return: dest
+*/
+char *_strncpy(char *dest, char *src, int n)
+{
+int i;
+for (i = 0; i < n && *(src + i) != '\0'; i++)
+{
+*(dest + i) = *(src + i);
+}
+while (i < n)
+{
+*(dest + i) = '\0';
+i++;
+}
+return (dest);
+}
+3-islower.c/    1614354534  0     0     100644  179       `
+#include "holberton.h"
+/**
+* _islower - does my stuff
+* @c: user input
+*
+* Return: lower
+*/
+int _islower(int c)
+{
+if (c >= 'a' && c <= 'z')
+{
+return (1);
+}
+else
+{
+return (0);
+}
+}
+
+3-puts.c/       1614354534  0     0     100644  244       `
+#include "holberton.h"
+/**
+* _puts -change value using the pointer address
+*
+*@str: stores the input
+*/
+void _puts(char *str)
+{
+char temp;
+int length = 0;
+while (*str != '\0')
+{
+temp = *str;
+_putchar(temp);
+length++;
+str++;
+}
+_putchar('\n');
+}
+3-strcmp.c/     1614354534  0     0     100644  276       `
+#include "holberton.h"
+/**
+* _strcmp -concatinate string
+*
+*@s1: stores the input
+*@s2: source
+*Return: comp
+*/
+int _strcmp(char *s1, char *s2)
+{
+while ((*s1 != '\0' && *s2 != '\0') && *s1 == *s2)
+{
+s1++;
+s2++;
+}
+if (*s1 == *s2)
+{
+return (0);
+}
+else
+{
+return (*s1 - *s2);
+}
+}
+3-strspn.c/     1614354534  0     0     100644  335       `
+#include "holberton.h"
+/**
+* _strspn -check character in a string
+*
+*@s: source
+*@accept: character
+*Return: number of characters
+*/
+unsigned int _strspn(char *s, char *accept)
+{
+unsigned int i;
+unsigned int j;
+for (i = 0; s[i] != '\0'; i++)
+{
+for (j = 0; accept[j] != s[i]; j++)
+{
+if (accept[j] == '\0')
+return (i);
+}
+}
+return (i);
+}
+
+4-isalpha.c/    1614354534  0     0     100644  211       `
+#include "holberton.h"
+/**
+* _isalpha - does my stuff
+* @c: user input
+*
+* Return: if its alphanumeric.
+*/
+int _isalpha(int c)
+{
+if ((c >= 97 && c <= 122) || (c >= 65 && c <= 90))
+return (1);
+else
+return (0);
+}
+
+4-strpbrk.c/    1614354534  0     0     100644  320       `
+#include "holberton.h"
+/**
+* _strpbrk -check character in a string
+*
+*@s: source
+*@accept: character
+*Return: number of characters
+*/
+char *_strpbrk(char *s, char *accept)
+{
+unsigned int i, j;
+for (i = 0; s[i] != '\0'; i++)
+{
+for (j = 0; accept[j] != '\0'; j++)
+{
+if (*s == accept[j])
+return (s);
+}
+s++;
+}
+return (0);
+}
+6-abs.c/        1614354534  0     0     100644  172       `
+#include <stdlib.h>
+#include "holberton.h"
+/**
+* _abs - does my stuff
+* @m: user input
+*
+* Return: absolute.
+*/
+int _abs(int m)
+{
+int result = (abs(m));
+return (result);
+}
+9-strcpy.c/     1614354534  0     0     100644  266       `
+#include "holberton.h"
+/**
+*_strcpy - change value using
+*
+*@dest: stores the input
+*@src: integer
+*Return: int
+*/
+char *_strcpy(char *dest, char *src)
+{
+int index = 0;
+while (src[index])
+{
+dest[index] = src[index];
+index++;
+}
+dest[index++] = '\0';
+return (dest);
+}
+_putchar.c/     1614354534  0     0     100644  247       `
+#include <unistd.h>
+
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
+
+_strstr.c/      1614355238  0     0     100644  167       `
+#include "holberton.h"
+/**
+*_strstr-change value using the pointer address
+*
+*@s: stores the input
+*Return: length
+*/
+char *_strstr(char *haystack, char *needle)
+{
+
+}
+
+main.c/         1614405798  0     0     100644  153       `
+#include "holberton.h"
+
+int main(void)
+{
+    _puts("\"At the end of the day, my goal was to be the best hacker\"\n\t- Kevin Mitnick");
+    return (0);
+}
+
