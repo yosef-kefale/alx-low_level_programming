@@ -1,17 +1,16 @@
 #include <stdio.h>
 /**
- * main - print name of the file
+ * main - print all the arguments
  * @argc: length of the argument
  * @argv: string
- * Return: name of file
+ * Return: name of all arguments
  */
 int main(int argc, char *argv[])
 {
 int i;
-i = 0;
-for int (i = 0;i < argc;i++)
+for (i = 0;i < argc;i++)
 {
-	printf("%s\n", argv[i]);
+printf("%s\n", argv[i]);
 }
-	return (0);
+return (0);
 }
