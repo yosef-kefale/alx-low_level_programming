@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	for (cash = 0; cash > 0; count++)
+	for (cash = 0; cash > 0; cash++)
 	{
 		if (cash > 25)
 			cash = cash - 25;
