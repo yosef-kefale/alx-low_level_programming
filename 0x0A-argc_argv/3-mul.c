@@ -8,7 +8,8 @@
 int main(int __attribute__((__unused__))argc, char *argv[])
 {
 int mul;
-if (isdigit(argv[1] == false || isdigit(argv[2] == false)
+
+if(argv[1] != (int)argv[2] )
 {
 printf("Error\n");
 return (1);
