@@ -19,11 +19,6 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	cash = atoi(argv[1]);
-	if (cash < 0)
-	{
-		printf("0\n");
-		return (0);
-	}
 	for (cash = 0; cash > 0; cash++)
 	{
 		if (cash > 25)
