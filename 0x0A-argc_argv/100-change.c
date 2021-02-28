@@ -17,6 +17,11 @@ printf("Error\n");
 return (1);
 }
 cash = atoi(argv[1]);
+if (cash <= 0)
+	{
+		printf("0\n");
+		return (0);
+	}
 for (count = 0; cash > 0; count++)
 {
 if (cash >= 25)
