@@ -6,6 +6,8 @@
 **/
 int main(int argc, char* argv[])
 {
-_putchar("%s",argv[0]);
+int i;
+i = 0;
+_putchar("%s",argv[i]);
 return (0);
 }
