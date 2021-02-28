@@ -3,17 +3,15 @@
 
 int main(int argc, char *argv[])
 {
-int num1, i, j;
+int num1, i, j,counter;
 int coin[4];
 i = 0;
-int counter;
 coin[0]=25;
 coin[1]=10;
 coin[2]=5;
 coin[3]=2;
 coin[4]=1;
 counter = 0;
-int result;
 if (argc > 2) {
 		printf("Error\n");
 		return(1);
