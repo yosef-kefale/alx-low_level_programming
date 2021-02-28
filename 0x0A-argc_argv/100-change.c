@@ -4,14 +4,14 @@
 int main(int argc, char *argv[])
 {
 int num1, i, j;
+int coin[4];
 i = 0;
-int coin[];
+int counter;
 coin[0]=25;
 coin[1]=10;
 coin[2]=5;
 coin[3]=2;
 coin[4]=1;
-int counter;
 counter = 0;
 int result;
 if (argc > 2) {
