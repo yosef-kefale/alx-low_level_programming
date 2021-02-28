@@ -25,8 +25,8 @@ else{
             counter = counter + result;
             }
         }
-  printf("%d/n",counter);
     }
+	  printf("%d/n",counter);
   return (0);
 }
 
