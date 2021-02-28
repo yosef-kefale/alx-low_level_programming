@@ -5,7 +5,6 @@ int main(int argc, char *argv[])
 {
 int num1,j,counter;
 int coin[4];
-i = 0;
 coin[0]=25;
 coin[1]=10;
 coin[2]=5;
