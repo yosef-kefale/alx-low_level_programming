@@ -3,7 +3,7 @@
 
 int main(int argc, char *argv[])
 {
-int num1, i, j,counter;
+int num1,j,counter;
 int coin[4];
 i = 0;
 coin[0]=25;
