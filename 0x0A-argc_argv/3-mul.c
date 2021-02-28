@@ -1,28 +1,27 @@
+  
 #include <stdio.h>
 #include <stdlib.h>
+#define UNUSED(x)(void)(x)
 /**
- * main - multiply two arguments
- * @argc: length of the argument
- * @argv: string
- * Return: multiply result
+ * main - multiplies two numbers
+ * @argc: int
+ * @argv: array of strings
+ * Return: sum
  */
-int multiply(int n1, int n2)
-{
-	return n1*n2;
-}
 int main(int argc, char *argv[])
 {
-int number1, number2, product;	
-if (argc != 3)
-{
-printf(Error\n");
-return (1);
-}
-number1 = atoi(argv[1]);
-number2 = atoi(argv[2]);
-product = multiply(number1, number2);
-printf("%d",product);      
-return (0);
-}
+	int i;
+	int j;
 
+	if (argc < 3)
+	{
+		printf("%s\n", "Error");
+		return (1);
+	}
 
+	i = atoi(argv[1]);
+	j = atoi(argv[2]);
+
+	printf("%d\n", i * j);
+	return (0);
+}
