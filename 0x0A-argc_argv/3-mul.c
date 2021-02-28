@@ -1,7 +1,5 @@
-  
 #include <stdio.h>
 #include <stdlib.h>
-#define UNUSED(x)(void)(x)
 /**
  * main - multiplies two numbers
  * @argc: int
