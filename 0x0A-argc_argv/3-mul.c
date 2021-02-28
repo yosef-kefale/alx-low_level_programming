@@ -1,23 +1,28 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - multiply two arguments
  * @argc: length of the argument
  * @argv: string
  * Return: multiply result
  */
-int main(int __attribute__((__unused__))argc, char *argv[])
+int multiply(int n1, int n2)
 {
-int mul;
-
-if(argv[1] != (int)argv[2] )
+	return n1*n2;
+}
+int main(int argc, char *argv[])
 {
-printf("Error\n");
+int number1, number2, product;	
+if (argc != 3)
+{
+printf(Error\n");
 return (1);
 }
-else
-{
-mul = argv[1] * argv[2];
-printf("%d\n", mul);
-}
+number1 = atoi(argv[1]);
+number2 = atoi(argv[2]);
+product = multiply(number1, number2);
+printf("%d",product);      
 return (0);
 }
+
+
