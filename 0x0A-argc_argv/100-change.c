@@ -26,7 +26,7 @@ else{
             }
         }
     }
-	  printf("%d/n",counter);
+	  printf("%d",counter);
   return (0);
 }
 
