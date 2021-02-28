@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <ctype.h>
 /**
- * main - adds two numbers
+ * main - adds all intigers in an argument
  * @argc:int
  * @argv:array of strings
- * Return: sum if all digits
+ * Return: sum if all numeric(intiger) values
  */
 int main(int argc, char *argv[])
 {
