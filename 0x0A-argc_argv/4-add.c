@@ -6,17 +6,18 @@
  * @argv: array of strings
  * Return: sum
  */
-using namespace std;
-bool isNumeric(char *argv[], int argc) {
-   for int (i = 1; i < argc; i++)
+int isNumeric(char *argv[], int argc)
+{
+	int i = 0;
+   for (i = 1; i < argc; i++)
       if (isdigit(argv[i]) == false)
-      return false; //when one non numeric value is found, return false
-   return true;
+      return (-1);
+   return (1);
 }
 int main(int argc, char *argv[])
 {
   int sum;
-  if (isNumeric(char *argv[],int argc) == false)
+  if (isNumeric(char *argv[],int argc) == -1)
   {
   printf("Error\n");
   return (1);
