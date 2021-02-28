@@ -20,7 +20,7 @@ else{
     num1 = atoi(argv[1]);
     for (j=0;j<=4;j++)
         {
-            while ((num1 / coin[i])> coin)
+            while ((num1 / coin[i])> num1)
             {
             num1 = num1 /coin[i];
             counter ++;
