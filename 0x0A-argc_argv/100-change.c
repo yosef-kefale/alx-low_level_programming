@@ -6,9 +6,13 @@ int main(int argc, char *argv[])
 int num1, i, j;
 i = 0;
 int coin[4];
-coin[]={25,10,5,2,1};
+coin[]=25;
+coin[]=10;
+coin[]=5;
+coin[]=2;
+coin[]=1;
 int counter;
-counter =0;
+counter = 0;
 int result;
 if (argc > 2) {
 		printf("Error\n");
