@@ -1,7 +1,6 @@
 #include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 /**
 * _strdup - point new allocated pointer
 * @str: string
@@ -10,8 +9,8 @@
 char *_strdup(char *str)
 {
 int str_size;
-static char *dup;
-char *dup_offset;
+int i;
+char *dup;
 while (str != '\0')
 {
 str_size++;
@@ -19,13 +18,12 @@ str_size++;
 dup = (char *)malloc(sizeof(char) * str_size + 1);
 if (dup == NULL)
 return ((char *)NULL);
-dup_offset = dup;
-while (*str)
+
+while (str[i] != '\0')
 {
-*dup_offset = *str;
-dup_offset++;
-str++;
+dup[i] = str[i];
+i++;
 }
-*dup_offset = '\0';
+*dup = '\0';
 return (dup);
 }
