@@ -17,7 +17,7 @@ else
 {
  char *str;
    str = (char *) malloc(size);
-   strcpy(str, c);
+   strcpy(str, "holberton");
    return (str);
 }
 return (0);
