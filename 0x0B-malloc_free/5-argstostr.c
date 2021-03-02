@@ -30,7 +30,7 @@ j++;
 i++;
 }
 size = size + ac + 1;
-s = malloc(size * sizeof(char));
+s = malloc(size *sizeof(char));
 if (s == 0)
 return (0);
 k = 0;
