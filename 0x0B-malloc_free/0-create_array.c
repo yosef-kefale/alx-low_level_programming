@@ -7,7 +7,7 @@
  * @c: array of strings
  * Return: pointer 
  */
-char *create_array(unsigned int size, char  __attribute__((__unused__))*c)
+char *create_array(unsigned int size, char c)
 {
 char *str2 = c;
 if (size == 0)
