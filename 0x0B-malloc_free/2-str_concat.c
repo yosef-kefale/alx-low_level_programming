@@ -2,9 +2,10 @@
 #include <stdlib.h>
 #include <string.h>
 /**
-* create_array - multiplies two numbers
-* @size: int
-* @c: array of strings
+* str_concat - concatinate string
+* @s1: first string
+* @s2: second string
+* @c: concatinate of strings
 *Return: pointer
 */
 char *str_concat(char *s1, char *s2)
