@@ -14,10 +14,9 @@ char *dup;
 str_size = 0;
 if (str == 0)
 return (0);
-while (*str)
+while (str[str_size] != '\0')
 {
 str_size++;
-*str++;
 }
 str_size++;
 dup = malloc(str_size * sizeof(char));
