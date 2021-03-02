@@ -18,7 +18,7 @@ char *dup;
 str_size = 0;
 j = 0;
 k = 0;
-if (s1 == 0 || s2 == 0)
+if (s1 == 0 && s2 == 0)
 return (0);
 while (s1[str_size] != '\0')
 {
