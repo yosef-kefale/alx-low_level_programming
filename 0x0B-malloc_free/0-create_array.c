@@ -18,10 +18,7 @@ else
 {
  char *str;
    str = (char *) malloc(size);
-   while (*str2)
-   {
-   str=str2;
-   }
+  strcpy(str,str2)
    return (str);
 }
 return (0);
