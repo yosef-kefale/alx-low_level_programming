@@ -5,8 +5,7 @@
 * str_concat - concatinate string
 * @s1: first string
 * @s2: second string
-* @c: concatinate of strings
-*Return: pointer
+*Return: pointer to the concatinated string
 */
 char *str_concat(char *s1, char *s2)
 {
