@@ -21,7 +21,7 @@ char *_strdup(char *str)
     {
         *dup_offset = *str;
         dup_offset++;
-        org++;
+        str++;
     }
     *dup_offset = '\0';
 
