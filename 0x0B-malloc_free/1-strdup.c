@@ -11,9 +11,12 @@ char *_strdup(char *str)
 int str_size;
 int i;
 char *dup;
+str_size = 0;
+
 if (str == 0)
 return (0);
-while (str != '\0')
+
+while (*str)
 {
 str_size++;
 }
