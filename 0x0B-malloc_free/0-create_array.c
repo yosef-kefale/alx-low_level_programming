@@ -9,7 +9,7 @@
  */
 char *create_array(unsigned int size, char c)
 {
-char str2 = c;
+char str1[20] = c;
 if (size == 0)
 {
 return (NULL);
@@ -17,8 +17,8 @@ return (NULL);
 else
 {
  char *str;
-   Arr = (char *) malloc(size);
-   strcpy(str, str2);
+   str = (char *) malloc(size);
+   strcpy(str, str1);
    return (str);
 }
 return (0);
