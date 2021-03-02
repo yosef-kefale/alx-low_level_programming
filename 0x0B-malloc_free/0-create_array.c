@@ -9,7 +9,6 @@
  */
 char *create_array(unsigned int size, char c)
 {
-char str1[20] = c;
 if (size == 0)
 {
 return (NULL);
@@ -17,8 +16,12 @@ return (NULL);
 else
 {
  char *str;
-   str = (char *) malloc(size);
-   strcpy(str, str1);
+ int i;
+ str = (char *) malloc(size);
+ for (i=0;i<=size;i++)
+ {
+ str[i]=c[i];
+ }
    return (str);
 }
 return (0);
