@@ -13,22 +13,19 @@ int i;
 char *dup;
 str_size = 0;
 if (str == 0)
-		return (0);
-
-	while (str[str_size] != '\0')
-		str_size++;
-	str_size++;
-
-	dup = malloc(str_size * sizeof(char));
-	if (dup == 0)
-		return (0);
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		dup[i] = str[i];
-		i++;
-	}
-	dup[i] = '\0';
-	return (dup);
+return (0);
+while (*str)
+str_size++;
+str_size++;
+dup = malloc(str_size * sizeof(char));
+if (dup == 0)
+return (0);
+i = 0;
+while (str[i] != '\0')
+{
+dup[i] = str[i];
+i++;
+}
+dup[i] = '\0';
+return (dup);
 }
