@@ -48,10 +48,10 @@ char *argstostr(int ac, char **av)
 			j++;
 			k++;
 		}
-		s[k] = '\n';
-		k++;
-		i++;
-	}
-	s[k] = '\0';
-	return (s);
+	s[k] = '\n';
+	k++;
+	i++;
+}
+s[k] = '\0';
+return (s);
 }
