@@ -21,5 +21,4 @@ for (i = 0; i < size; i++)
 str[i] = c;
 }
 return (str);
-return (0);
 }
