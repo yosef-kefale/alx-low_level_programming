@@ -5,7 +5,7 @@
 * create_array - multiplies two numbers
 * @size: int
 * @c: array of strings
-* Return: pointer 
+*Return: pointer 
 */
 char *create_array(unsigned int size, char c)
 {
