@@ -7,8 +7,9 @@
  * @c: array of strings
  * Return: pointer 
  */
-char *create_array(unsigned int size, char c)
+char *create_array(unsigned int size, char  __attribute__((__unused__))*c)
 {
+char 8str2 = c;
 if (size == 0)
 {
 return (NULL);
@@ -16,12 +17,8 @@ return (NULL);
 else
 {
  char *str;
- int i;
- str = (char *) malloc(size);
- for (i=0;i<=size;i++)
- {
- str[i]=c[i];
- }
+   str = (char *) malloc(size);
+   strcpy(str, str2);
    return (str);
 }
 return (0);
