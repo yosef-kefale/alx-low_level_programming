@@ -9,7 +9,7 @@
  */
 char *create_array(unsigned int size, char  __attribute__((__unused__))*c)
 {
-char 8str2 = c;
+char str2 = c;
 if (size == 0)
 {
 return (NULL);
