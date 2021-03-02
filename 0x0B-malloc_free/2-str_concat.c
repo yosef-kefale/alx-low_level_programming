@@ -18,8 +18,10 @@ char *dup;
 str_size = 0;
 j = 0;
 k = 0;
-if (s1 == 0 && s2 == 0)
-return (0);
+if (s1 == NULL)
+s1 = "";
+if (s2 == NULL)
+s2 = "";
 while (s1[str_size] != '\0')
 {
 str_size++;
