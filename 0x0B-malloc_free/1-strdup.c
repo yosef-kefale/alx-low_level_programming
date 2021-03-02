@@ -17,7 +17,7 @@ return (0);
 while (*str)
 {
 str_size++;
-str++;
+*str++;
 }
 str_size++;
 dup = malloc(str_size * sizeof(char));
