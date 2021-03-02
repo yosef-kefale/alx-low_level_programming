@@ -3,6 +3,7 @@
 #include <string.h>
 /**
 * _strdup - point new allocated pointer
+* @str: string
 * Return: pointer
 */
 char *_strdup(char *str)
@@ -13,7 +14,7 @@ char *dup_offset;
 str_size = strlen(str);
 dup = (char *)malloc(sizeof(char) * str_size + 1);
 if (dup == NULL)
-return ( (char *)NULL);
+return ((char *)NULL);
 dup_offset = dup;
 while (*str)
 {
@@ -22,5 +23,5 @@ dup_offset++;
 str++;
 }
 *dup_offset = '\0';
-return(dup);
+return (dup);
 }
