@@ -18,7 +18,7 @@ char *dup;
 str_size = 0;
 j = 0;
 k = 0;
-if (str == 0)
+if (s1 == 0 || s2 == 0)
 return (0);
 while (s1[str_size] != '\0')
 {
@@ -34,7 +34,7 @@ dup = malloc(str_size *sizeof(char));
 if (dup == 0)
 return (0);
 i = 0;
-while (str[i] != '\0')
+while (s1[i] != '\0')
 {
 dup[i] = s1[i];
 i++;
