@@ -1,21 +1,29 @@
-#include <stdlib.h>
 #include "holberton.h"
-
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 /**
- * _calloc - allocate a 2d integer grid
+ * _calloc - prints memory for an array. copies the calloc function
+ * @nmemb: unsigned int
+ * @size: unsigned int
  *
- * @nmemb: block of memory
- * @size: size of grid
- * Return: returns pointer to grid created
+ * Return: pointer to the allocated memory
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
-unsigned int i;
-char *p;
-if (nmemb == 0 || size == 0)
-return (NULL);
-p = malloc(nmemb * size);
-if (p == NULL)
-return (NULL);
-for (i = 0; i != size; i++)
-*(p + (size * i)) = 0;
-return (p);
+{
+	unsigned int i;
+	char *s;
+
+	if (nmemb == 0 || size == 0)
+		return (NULL);
+	s = malloc(size * nmemb);
+	if (s == NULL)
+		return (NULL);
+	i = 0;
+	while (i < nmemb * size)
+	{
+		s[i] = 0;
+		i++;
+	}
+	return (s);
+}
