@@ -17,7 +17,7 @@ printf("Name: %s",dog->name);
 if (dog->age == NULL)
 printf("Age: (nil)\n");
 else
-printf("Age: %d",dog->age);
+printf("Age: %f",dog->age);
 if (dog->owner == NULL)
 printf("Owner: (nil)\n");
 else
