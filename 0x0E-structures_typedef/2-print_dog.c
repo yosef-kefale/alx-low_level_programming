@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "dog.h"
 /**
- * init_dog - initialize struct
+ * print_dog - initialize struct
  * @d: pointer to dog
  *
  * Return: pointer to dog
