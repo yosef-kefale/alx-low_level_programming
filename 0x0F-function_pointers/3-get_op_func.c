@@ -1,32 +1,28 @@
-#include "3-calc.h"
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
+#include "3-calc.h"
 /**
- * get_op_func - get an operation
- * @s: operator
- * Return: No
- */
+* get_op_func - get operation for use in 3-main
+* @s: char pointer s
+*
+* Return: int
+*/
 int (*get_op_func(char *s))(int, int)
 {
-	op_t ops[] = {
-		{"+", op_add},
-		{"-", op_sub},
-		{"*", op_mul},
-		{"/", op_div},
-		{"%", op_mod},
-		{NULL, NULL}
-	};
-	int i = 0;
+int i;
+op_t ops[] = {
+{"+", op_add},
+{"-", op_sub},
+{"*", op_mul},
+{"/", op_div},
+{"%", op_mod},
+{NULL, NULL}
+};
 
-	while (ops[i].op)
-	{
-		if (strcmp(s, ops[i].op) == 0)
-		{
-			return (ops[i].f);
-		}
-		i++;
-	}
-	printf("Error\n");
-	exit(99);
+i = 0;
+while (ops[i].f != NULL && strcmp(ops[i].op, s) != 0)
+i++;
+
+return (ops[i].f);
 }
