@@ -1,10 +1,10 @@
-#ifndef _3_CALC_H
-#define _3_CALC_H
+  
+#ifndef FILE_H
+#define FILE_H
 /**
- * struct op - Struct op
- *
- * @op: The operator
- * @f: The function associated
+ * struct op - Structure op
+ * @op: operator
+ * @f: function
  */
 typedef struct op
 {
