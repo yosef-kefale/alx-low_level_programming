@@ -4,14 +4,13 @@
 * @h: pointer to first
 *Return: pointer
 */
-size_t listint_len(const listint_t *h);
+size_t listint_len(const listint_t *h)
 {
-size_t count = 0;
-while (h) 
-{ 
+size_t i = 0;
+while (h)
+{
 h = h->next;
-count++;  
-} 
-return (count);
+i++;
 }
+return (i);
 }
