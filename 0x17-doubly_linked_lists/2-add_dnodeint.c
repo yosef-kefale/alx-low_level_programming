@@ -11,23 +11,23 @@ dlistint_t * newnode;
 newnode =malloc(sizeof(dlistint_t));
     if(newnode == NULL)
     {
-        return (null);
+        return (NULL);
     }
     if (*head == NULL)
 	{
-		new->n = n;
-		new->next = NULL;
-		new->prev = NULL;
-		*head = new;
+		newnode->n = n;
+		newnode->next = NULL;
+		newnode->prev = NULL;
+		*head = newnode;
 		return (*head);
 	}
     else
     {
-  (*head)->prev = new;
-	new->n = n;
-	new->next = *head;
-	new->prev = NULL;
-	*head = new;
+  (*head)->prev = newnode;
+	newnode->n = n;
+	newnode->next = *head;
+	newnode->prev = NULL;
+	*head = newnode;
 	return (*head);
     }
 }
