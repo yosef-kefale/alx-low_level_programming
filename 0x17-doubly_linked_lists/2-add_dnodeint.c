@@ -21,13 +21,10 @@ newnode =malloc(sizeof(dlistint_t));
 		*head = newnode;
 		return (*head);
 	}
-    else
-    {
-  (*head)->prev = newnode;
-	newnode->n = n;
-	newnode->next = *head;
-	newnode->prev = NULL;
-	*head = newnode;
-	return (*head);
-    }
+(*head)->prev = newnode;
+newnode->n = n;
+newnode->next = *head;
+newnode->prev = NULL;
+*head = newnode;
+return (*head);
 }
