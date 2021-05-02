@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * add_dnodeint - add node to the beginning of list
+ * add_dnodeint_end - add node to the end of list
  * @head: pointer to first node
  * @n: data inside node
  * Return: pointer to first node
@@ -23,12 +23,12 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	}
   while (tmp != NULL)
 	{
-		tmo = tmp->next;
+		tmp = tmp->next;
 		i++;
 	}
 
-	tmp->next = new_node;
-	new_node->prev = tmp;
-	new_node->next = NULL;
-	return (new_node);
+	tmp->next = new;
+	new->prev = tmp;
+	new->next = NULL;
+	return (new);
 }
